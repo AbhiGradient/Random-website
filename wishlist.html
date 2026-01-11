@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wishlist - IgnitionX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="try1.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .wishlist-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .wishlist-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .wishlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .wishlist-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .wishlist-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .wishlist-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .wishlist-info {
+            padding: 20px;
+        }
+
+        .wishlist-info h3 {
+            margin: 0 0 10px;
+        }
+
+        .wishlist-info p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .wishlist-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .btn-cart {
+            background: #132f4b;
+            color: #fff;
+        }
+
+        .btn-remove {
+            background: #e63946;
+            color: #fff;
+        }
+
+        .empty-wishlist {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #132f4b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div style="
+    background: wheat;
+    color: #524214;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+">
+
+        <div style="
+        position: absolute;
+        left: 20px;
+        display: flex;
+        gap: 12px;
+    ">
+        <a href="https://www.facebook.com/share/1D6xXfp61p/" style="color:#524214; text-decoration:none; font-size:20px;">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/Abhishek012546" style="color:#524214; text-decoration:none; font-size:20px;">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/its_abhisheksapkale" style="color:#524214; text-decoration:none; font-size:20px;">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@AbhishekSapkale_06" style="color:#524214; text-decoration:none; font-size:20px;">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+
+        <div style="text-align:center;">
+         Speak with our build experts – Call us at +(91)-7558666663
+    </div>
+
+</div>
+
+
+
+
+<nav class="navbar">
+    <div class="nav-container">
+
+                <div class="nav-logo">
+            <a href="try1.html">IgnitionX</a>
+        </div>
+
+                <div class="nav-search">
+            <input type="text" placeholder="Search performance parts, cars, brands...">
+            <button>Search</button>
+        </div>
+
+                <ul class="nav-links">
+            <li><a href="try1.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+
+                <div class="nav-actions">
+            <a href="login.html" class="nav-btn">Login</a>
+            <a href="wishlist.html" class="nav-btn">Wishlist</a>
+            <a href="cart.html" class="nav-btn cart">Cart 🛒</a>
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+<div class="wishlist-container">
+    <h2 class="wishlist-title">Your Wishlist</h2>
+
+    <div class="wishlist-grid" id="wishlistGrid">
+
+                <div class="wishlist-card">
+            <img src="https://www.maperformance.com/cdn/shop/files/New_2025_Evo_X_Banner_V2.webp" alt="Car">
+            <div class="wishlist-info">
+                <h3>Mitsubishi Evo X</h3>
+                <h1> Turbo Kit</h1>
+                <p>High-performance turbo kit for Evo X.</p>
+                <p>High-performance parts and tuning solutions.</p>
+
+                <div class="wishlist-actions">
+                    <button class="btn btn-cart">Add to Cart</button>
+                    <button class="btn btn-remove" onclick="removeItem(this)">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div id="emptyMsg" class="empty-wishlist" style="display:none;">
+        Your wishlist is empty.
+    </div>
+
+    <a href="try1.html" class="back-home">
+        ← Continue Shopping
+    </a>
+</div>
+<footer class="dinan-footer">
+    <div class="footer-container">
+        
+        <div class="footer-col about">
+            <h3>About Us</h3>
+            </div>
+
+        <div class="footer-col links">
+            <div class="link-group">
+                <h3>Technical Support</h3>
+                <ul>
+                    <li><a href="support.html">Contact</a></li>
+                    <li><a href="support.html">Help Center</a></li>
+                    <li><a href="tandc.html">Terms and Conditions</a></li>
+                    <li><a href="pp.html">Privacy Policy</a></li>
+                    <li><a href="map.html">MAP Policy</a></li>
+                </ul>
+            </div>
+            <div class="link-group">
+                <h3>Company Information</h3>
+                <ul>
+                    <li><a href="try1.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-col newsletter-social">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
+                <a href="https://x.com/Abhishek012546" class="icon fab fa-twitter"></a>
+                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
+                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
+            </div>
+
+            <div class="newsletter">
+                <label>E-NEWSLETTER SIGN UP</label>
+                <div class="input-group">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">GO</button>
+                </div>
+            </div>
+
+            <p class="copyright">© Abhishek&Co.. All Rights Reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+<script>
+    function removeItem(btn) {
+        const card = btn.closest('.wishlist-card');
+        card.remove();
+
+        const grid = document.getElementById('wishlistGrid');
+        if (grid.children.length === 0) {
+            document.getElementById('emptyMsg').style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Secure Payment – MAPerformance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="try1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<section class="container" style="max-width:900px; margin-top:60px;">
+    
+    <h2 style="margin-bottom:20px;">Complete Your Payment</h2>
+
+    <div style="display:grid; grid-template-columns: 260px 1fr; gap:25px;">
+
+                <div style="
+            background:#fff;
+            border-radius:12px;
+            box-shadow:0 6px 18px rgba(0,0,0,0.12);
+            padding:20px;
+        ">
+
+            <p style="font-weight:600; margin-bottom:15px;">Payment Methods</p>
+
+            <button class="pay-option active" onclick="showPayment('card')">💳 Credit / Debit Card</button>
+            <button class="pay-option" onclick="showPayment('upi')">📱 UPI</button>
+            <button class="pay-option" onclick="showPayment('netbanking')">🏦 Net Banking</button>
+            <button class="pay-option" onclick="showPayment('wallet')">💼 Wallets</button>
+            <button class="pay-option" onclick="showPayment('crypto')">🌐 Crypto / NFT</button>
+            <button class="pay-option" onclick="showPayment('rtgs')">🏛 RTGS / NEFT</button>
+
+        </div>
+
+                <div style="
+            background:#fff;
+            border-radius:12px;
+            box-shadow:0 6px 18px rgba(0,0,0,0.12);
+            padding:30px;
+        ">
+
+                        <div class="payment-box" id="card">
+                <h3>Card Payment</h3>
+
+                                <div style="display:flex; gap:12px; margin:15px 0;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" height="30">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" height="30">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" height="30">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxHRDjZxZwMNQ3eyn297U7btHIvg4hJ7xGbg&s" height="30">
+                </div>
+
+                <form onsubmit="return payNow()">
+                    <input type="text" placeholder="Cardholder Name" required>
+                    <input type="text" placeholder="Card Number" maxlength="16" required>
+
+                    <div style="display:flex; gap:10px;">
+                        <input type="text" placeholder="MM/YY" required>
+                        <input type="password" placeholder="CVV" maxlength="3" required>
+                    </div>
+
+                    <button type="submit" class="nav-btn" style="width:100%; margin-top:15px;">
+                        Pay Securely
+                    </button>
+                </form>
+            </div>
+
+                        <div class="payment-box" id="upi" style="display:none;">
+                <h3>UPI Payment</h3>
+                <input type="text" placeholder="Enter UPI ID (name@bank)">
+                <button onclick="payNow()" class="nav-btn" style="margin-top:15px;">
+                    Pay via UPI
+                </button>
+            </div>
+
+                        <div class="payment-box" id="netbanking" style="display:none;">
+                <h3>Net Banking</h3>
+                <select>
+                    <option>Select Bank</option>
+                    <option>SBI</option>
+                    <option>HDFC</option>
+                    <option>ICICI</option>
+                    <option>Axis Bank</option>
+                </select>
+                <button onclick="payNow()" class="nav-btn" style="margin-top:15px;">
+                    Continue
+                </button>
+            </div>
+
+                        <div class="payment-box" id="wallet" style="display:none;">
+                <h3>Wallets</h3>
+                <p>Paytm • PhonePe • Google Pay</p>
+                <button onclick="payNow()" class="nav-btn" style="margin-top:15px;">
+                    Pay using Wallet
+                </button>
+            </div>
+
+                        <div class="payment-box" id="crypto" style="display:none;">
+                <h3>Crypto / NFT</h3>
+                <p>Ethereum • Polygon • Solana</p>
+                <button onclick="payNow()" class="nav-btn" style="margin-top:15px;">
+                    Connect Wallet
+                </button>
+            </div>
+
+                        <div class="payment-box" id="rtgs" style="display:none;">
+                <h3>RTGS / NEFT</h3>
+                <p>Bank Transfer (Manual Verification)</p>
+                <button onclick="payNow()" class="nav-btn" style="margin-top:15px;">
+                    Generate Transfer Details
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<script>
+function showPayment(type) {
+    document.querySelectorAll('.payment-box').forEach(box => box.style.display = 'none');
+    document.getElementById(type).style.display = 'block';
+
+    document.querySelectorAll('.pay-option').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+}
+
+function payNow() {
+    window.location.href = "success.html";
+    return false;
+}
+</script>
+
+</body>
+</html>

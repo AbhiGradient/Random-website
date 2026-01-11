@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Delivery Address - IgnitionX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <link rel="stylesheet" href="try1.css">
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div style="background:wheat;color:#524214;padding:10px;text-align:center;font-weight:600;">
+    Secure Checkout • Address → Payment → Success
+</div>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="try1.html">IgnitionX</a>
+        </div>
+
+        <div class="nav-search">
+            <input type="text" placeholder="Search performance parts...">
+            <button>Search</button>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="try1.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#" class="nav-btn cart">Cart</a>
+        </div>
+    </div>
+</nav>
+
+<section class="container section" style="max-width:1000px;text-align:center;">
+    <h1>Select Delivery Address</h1>
+    <p style="color:#777;font-size:18px;">
+        Choose an address for delivery. You can edit or add addresses later.
+    </p>
+</section>
+
+
+<section class="container section" style="max-width:1100px;">
+    <form id="addressForm">
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;">
+
+           
+            <label style="border:2px solid #ddd;border-radius:12px;padding:20px;cursor:pointer;">
+                <input type="radio" name="address" required style="margin-right:10px;">
+                <h3>Home</h3>
+                <p>
+                    Andrew Tate<br>
+                    Flat 302, Shree Residency<br>
+                    MG Road, Andheri East<br>
+                    Mumbai, Maharashtra – 400069<br>
+                    India<br>
+                    📞 +91 98765 43210
+                </p>
+            </label>
+
+            
+            <label style="border:2px solid #ddd;border-radius:12px;padding:20px;cursor:pointer;">
+                <input type="radio" name="address" style="margin-right:10px;">
+                <h3>Office</h3>
+                <p>
+                    Narendra Modi<br>
+                    5th Floor, Tech Park One<br>
+                    Whitefield Main Road<br>
+                    Bengaluru, Karnataka – 560066<br>
+                    India<br>
+                    📞 +91 91234 56789
+                </p>
+            </label>
+
+        </div>
+
+       
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:40px;">
+            <a href="cart.html" class="nav-btn">← Back to Cart</a>
+
+            <button type="submit" class="nav-btn cart">
+                Continue to Payment →
+            </button>
+        </div>
+
+    </form>
+</section>
+
+
+<footer class="dinan-footer">
+    <div class="footer-container">
+        <div class="footer-col about">
+            <h3>About IgnitionX</h3>
+            <p>
+                IgnitionX delivers premium aftermarket parts trusted by enthusiasts worldwide.
+            </p>
+        </div>
+
+        <div class="footer-col links">
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-col newsletter-social">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
+                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
+            </div>
+            <p>© Abhishek&Co.. All Rights Reserved. </p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+document.getElementById("addressForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    
+    window.location.href = "payment.html"; 
+});
+</script>
+
+</body>
+</html>
