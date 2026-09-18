@@ -2,14 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wishlist - IgnitionX</title>
+
+    <title>Wishlist – IgnitionX Performance Parts</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="try1.css">
+    <meta name="description"
+          content="View and manage your saved automotive performance parts and upgrades in your IgnitionX wishlist.">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="robots" content="noindex, follow">
+
+    <meta name="theme-color" content="#16324f">
+
+    <link rel="canonical"
+          href="https://abhigradient.github.io/Random-website/wishlist.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="Wishlist – IgnitionX Performance Parts">
+    <meta property="og:description"
+          content="Manage your saved automotive performance parts and upgrades with IgnitionX.">
+    <meta property="og:url"
+          content="https://abhigradient.github.io/Random-website/wishlist.html">
+    <meta property="og:site_name" content="IgnitionX">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title"
+          content="Wishlist – IgnitionX">
+    <meta name="twitter:description"
+          content="View your saved performance parts and automotive upgrades.">
+
+    <link rel="stylesheet" href="try1.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
+
         .wishlist-container {
             max-width: 1200px;
             margin: 60px auto;
@@ -18,13 +49,14 @@
 
         .wishlist-title {
             text-align: center;
-            font-size: 32px;
+            font-size: 34px;
             margin-bottom: 40px;
         }
 
         .wishlist-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns:
+                repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
         }
 
@@ -33,44 +65,58 @@
             border-radius: 14px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.12);
             overflow: hidden;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
         }
 
         .wishlist-card:hover {
             transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.16);
         }
 
         .wishlist-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            display: block;
         }
 
         .wishlist-info {
             padding: 20px;
         }
 
+        .wishlist-info h2 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+
         .wishlist-info h3 {
             margin: 0 0 10px;
+            font-size: 18px;
         }
 
         .wishlist-info p {
             font-size: 14px;
             color: #555;
+            line-height: 1.6;
         }
 
         .wishlist-actions {
             display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
+            gap: 10px;
+            margin-top: 18px;
+            flex-wrap: wrap;
         }
 
         .btn {
-            padding: 8px 14px;
+            display: inline-block;
+            padding: 9px 15px;
             border-radius: 6px;
             border: none;
             cursor: pointer;
             font-weight: 600;
+            text-decoration: none;
+            font-size: 14px;
         }
 
         .btn-cart {
@@ -98,179 +144,424 @@
             color: #132f4b;
             font-weight: 600;
         }
+
+        @media (max-width: 600px) {
+
+            .wishlist-container {
+                margin: 30px auto;
+                padding: 15px;
+            }
+
+            .wishlist-title {
+                font-size: 28px;
+            }
+
+        }
+
     </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "IgnitionX Wishlist",
+        "description": "Wishlist page for saved IgnitionX automotive performance parts.",
+        "url": "https://abhigradient.github.io/Random-website/wishlist.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "IgnitionX",
+            "url": "https://abhigradient.github.io/Random-website/"
+        }
+    }
+    </script>
+
 </head>
+
 <body>
+
+
+<!-- Contact Bar -->
 <div style="
-    background: wheat;
-    color: #524214;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-size: 14px;
-    font-weight: 600;
+    background:wheat;
+    color:#524214;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    font-size:14px;
+    font-weight:600;
 ">
 
-        <div style="
-        position: absolute;
-        left: 20px;
-        display: flex;
-        gap: 12px;
+    <div style="
+        position:absolute;
+        left:20px;
+        display:flex;
+        gap:12px;
     ">
-        <a href="https://www.facebook.com/share/1D6xXfp61p/" style="color:#524214; text-decoration:none; font-size:20px;">
+
+        <a href="https://www.facebook.com/share/1D6xXfp61p/"
+           aria-label="Facebook"
+           style="color:#524214;text-decoration:none;font-size:20px;">
             <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://x.com/Abhishek012546" style="color:#524214; text-decoration:none; font-size:20px;">
+
+        <a href="https://x.com/Abhishek012546"
+           aria-label="X"
+           style="color:#524214;text-decoration:none;font-size:20px;">
             <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://www.instagram.com/its_abhisheksapkale" style="color:#524214; text-decoration:none; font-size:20px;">
+
+        <a href="https://www.instagram.com/its_abhisheksapkale"
+           aria-label="Instagram"
+           style="color:#524214;text-decoration:none;font-size:20px;">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.youtube.com/@AbhishekSapkale_06" style="color:#524214; text-decoration:none; font-size:20px;">
+
+        <a href="https://www.youtube.com/@AbhishekSapkale_06"
+           aria-label="YouTube"
+           style="color:#524214;text-decoration:none;font-size:20px;">
             <i class="fab fa-youtube"></i>
         </a>
+
     </div>
 
-        <div style="text-align:center;">
-         Speak with our build experts – Call us at +(91)-7558666663
+    <div>
+        Speak with our build experts –
+        <a href="tel:+917558666663"
+           style="color:inherit;text-decoration:none;">
+            Call us at +(91)-7558666663
+        </a>
     </div>
 
 </div>
 
 
+<!-- Navigation -->
+<nav class="navbar" aria-label="Main navigation">
 
-
-<nav class="navbar">
     <div class="nav-container">
 
-                <div class="nav-logo">
+        <div class="nav-logo">
             <a href="index.html">IgnitionX</a>
         </div>
 
-                <div class="nav-search">
-            <input type="text" placeholder="Search performance parts, cars, brands...">
-            <button>Search</button>
-        </div>
 
-                <ul class="nav-links">
+        <form class="nav-search"
+              action="shop.html"
+              method="get"
+              role="search">
+
+            <input
+                type="search"
+                name="q"
+                placeholder="Search performance parts, cars, brands..."
+                aria-label="Search IgnitionX"
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+
+        <ul class="nav-links">
+
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="brands.html">Brands</a></li>
             <li><a href="vehicles.html">Vehicles</a></li>
             <li><a href="deals.html">Deals</a></li>
             <li><a href="support.html">Support</a></li>
+
         </ul>
 
-                <div class="nav-actions">
-            <a href="login.html" class="nav-btn">Login</a>
-            <a href="wishlist.html" class="nav-btn">Wishlist</a>
-            <a href="cart.html" class="nav-btn cart">Cart 🛒</a>
+
+        <div class="nav-actions">
+
+            <a href="login.html" class="nav-btn">
+                Login
+            </a>
+
+            <a href="wishlist.html" class="nav-btn">
+                Wishlist
+            </a>
+
+            <a href="cart.html" class="nav-btn cart">
+                Cart 🛒
+            </a>
+
         </div>
 
     </div>
+
 </nav>
 
 
+<main>
+
+    <section class="wishlist-container">
+
+        <h1 class="wishlist-title">
+            Your Wishlist
+        </h1>
 
 
-<div class="wishlist-container">
-    <h2 class="wishlist-title">Your Wishlist</h2>
+        <div class="wishlist-grid"
+             id="wishlistGrid">
 
-    <div class="wishlist-grid" id="wishlistGrid">
+            <article class="wishlist-card">
 
-                <div class="wishlist-card">
-            <img src="https://www.maperformance.com/cdn/shop/files/New_2025_Evo_X_Banner_V2.webp" alt="Car">
-            <div class="wishlist-info">
-                <h3>Mitsubishi Evo X</h3>
-                <h1> Turbo Kit</h1>
-                <p>High-performance turbo kit for Evo X.</p>
-                <p>High-performance parts and tuning solutions.</p>
+                <img
+                    src="https://www.maperformance.com/cdn/shop/files/New_2025_Evo_X_Banner_V2.webp"
+                    alt="Mitsubishi Lancer Evolution X performance vehicle"
+                    loading="lazy"
+                >
 
-                <div class="wishlist-actions">
-                    <button class="btn btn-cart">Add to Cart</button>
-                    <button class="btn btn-remove" onclick="removeItem(this)">Remove</button>
+                <div class="wishlist-info">
+
+                    <h2>Mitsubishi Evo X</h2>
+
+                    <h3>Turbo Kit</h3>
+
+                    <p>
+                        High-performance turbo kit for the
+                        Mitsubishi Evo X.
+                    </p>
+
+                    <p>
+                        Performance parts and tuning solutions
+                        for enhanced power and response.
+                    </p>
+
+
+                    <div class="wishlist-actions">
+
+                        <a href="cart.html"
+                           class="btn btn-cart">
+                            Add to Cart
+                        </a>
+
+                        <button
+                            type="button"
+                            class="btn btn-remove"
+                            onclick="removeItem(this)"
+                            aria-label="Remove Mitsubishi Evo X Turbo Kit from wishlist">
+                            Remove
+                        </button>
+
+                    </div>
+
                 </div>
-            </div>
+
+            </article>
+
         </div>
 
-        
-    </div>
 
-    <div id="emptyMsg" class="empty-wishlist" style="display:none;">
-        Your wishlist is empty.
-    </div>
+        <div id="emptyMsg"
+             class="empty-wishlist"
+             style="display:none;">
 
-    <a href="index.html" class="back-home">
-        ← Continue Shopping
-    </a>
-</div>
+            Your wishlist is empty.
+
+        </div>
+
+
+        <a href="shop.html"
+           class="back-home">
+            ← Continue Shopping
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
 <footer class="dinan-footer">
+
     <div class="footer-container">
-        
+
+
         <div class="footer-col about">
-            <h3>About Us</h3>
-            </div>
+
+            <h3>About IgnitionX</h3>
+
+            <p>
+                IgnitionX delivers aftermarket performance parts,
+                tuning solutions and automotive support for
+                enthusiasts.
+            </p>
+
+        </div>
+
 
         <div class="footer-col links">
+
             <div class="link-group">
+
                 <h3>Technical Support</h3>
+
                 <ul>
-                    <li><a href="support.html">Contact</a></li>
-                    <li><a href="support.html">Help Center</a></li>
-                    <li><a href="tandc.html">Terms and Conditions</a></li>
-                    <li><a href="pp.html">Privacy Policy</a></li>
-                    <li><a href="map.html">MAP Policy</a></li>
+
+                    <li>
+                        <a href="support.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="support.html">
+                            Help Center
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tandc.html">
+                            Terms and Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pp.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="map.html">
+                            MAP Policy
+                        </a>
+                    </li>
+
                 </ul>
+
             </div>
+
+
             <div class="link-group">
+
                 <h3>Company Information</h3>
+
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="press.html">Press</a></li>
-                    <li><a href="careers.html">Careers</a></li>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="press.html">
+                            Press
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="careers.html">
+                            Careers
+                        </a>
+                    </li>
+
                 </ul>
+
             </div>
+
         </div>
 
+
         <div class="footer-col newsletter-social">
+
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
-                <a href="https://x.com/Abhishek012546" class="icon fab fa-twitter"></a>
-                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
-                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
+
+                <a href="https://www.facebook.com/share/1D6xXfp61p/"
+                   class="icon fab fa-facebook-f"
+                   aria-label="Facebook"></a>
+
+                <a href="https://x.com/Abhishek012546"
+                   class="icon fab fa-twitter"
+                   aria-label="X"></a>
+
+                <a href="https://www.instagram.com/its_abhisheksapkale"
+                   class="icon fab fa-instagram"
+                   aria-label="Instagram"></a>
+
+                <a href="https://www.youtube.com/@AbhishekSapkale_06"
+                   class="icon fab fa-youtube"
+                   aria-label="YouTube"></a>
+
             </div>
+
 
             <div class="newsletter">
-                <label>E-NEWSLETTER SIGN UP</label>
+
+                <label for="newsletter-email">
+                    E-NEWSLETTER SIGN UP
+                </label>
+
                 <div class="input-group">
-                    <input type="email" placeholder="Enter your email address">
-                    <button type="submit">GO</button>
+
+                    <input
+                        id="newsletter-email"
+                        type="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                    >
+
+                    <button type="button">
+                        GO
+                    </button>
+
                 </div>
+
             </div>
 
-            <p class="copyright">© Abhishek&Co.. All Rights Reserved.</p>
+
+            <p class="copyright">
+                © Abhishek&amp;Co. All Rights Reserved.
+            </p>
+
         </div>
 
     </div>
-</footer>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</footer>
 
 
 <script>
-    function removeItem(btn) {
-        const card = btn.closest('.wishlist-card');
-        card.remove();
 
-        const grid = document.getElementById('wishlistGrid');
-        if (grid.children.length === 0) {
-            document.getElementById('emptyMsg').style.display = 'block';
+    function removeItem(btn) {
+
+        const card = btn.closest('.wishlist-card');
+
+        if (card) {
+            card.remove();
         }
+
+        const grid =
+            document.getElementById('wishlistGrid');
+
+        const emptyMsg =
+            document.getElementById('emptyMsg');
+
+        if (grid && grid.children.length === 0) {
+            emptyMsg.style.display = 'block';
+        }
+
     }
+
 </script>
+
+<script src="try.js"></script>
 
 </body>
 </html>

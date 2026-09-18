@@ -1,157 +1,914 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Brands – IgnitionX</title>
+
+    <!-- Primary SEO -->
+
+    <title>Car Performance Brands & Automotive Parts Brands | IgnitionX</title>
+
+    <meta name="description"
+        content="Explore automotive brands at IgnitionX, including Toyota, BMW, Ford, Nissan, Subaru, Chevrolet, Audi, Tata, Honda, and Mazda. Discover performance cars, aftermarket parts, and tuning solutions.">
+
+    <meta name="keywords"
+        content="automotive brands, performance car brands, aftermarket car parts brands, Toyota performance parts, BMW tuning parts, Ford performance parts, Nissan tuning, Subaru performance, Audi performance parts, Honda tuning, Mazda performance">
+
+    <meta name="author" content="IgnitionX | Abhishek & Co.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#16324f">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Replace with your actual GitHub Pages URL -->
+
+    <link rel="canonical" href="https://yourdomain.com/brands.html">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+        content="Explore Automotive Brands | IgnitionX">
+
+    <meta property="og:description"
+        content="Browse automotive brands and discover performance vehicles, aftermarket parts, and tuning solutions at IgnitionX.">
+
+    <meta property="og:url"
+        content="https://yourdomain.com/brands.html">
+
+    <meta property="og:site_name" content="IgnitionX">
+
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd9H9XJ82_4QOw1ZCn8P5421ehpgHeCTsODw&s">
+
+    <meta property="og:image:alt"
+        content="Automotive brands featured on IgnitionX">
+
+    <!-- Twitter Card -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+        content="Explore Automotive Brands | IgnitionX">
+
+    <meta name="twitter:description"
+        content="Explore automotive brands and performance tuning solutions at IgnitionX.">
+
+    <meta name="twitter:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd9H9XJ82_4QOw1ZCn8P5421ehpgHeCTsODw&s">
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Stylesheets -->
+
     <link rel="stylesheet" href="try1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style> 
 
-.hero {
-    position: relative;
-    height: 280px;       
-    overflow: hidden;
-}
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    
-    display: block;
-}
+    <!-- Page-Specific Styles -->
 
+    <style>
 
-.hero h2 {
-    z-index: 2;
-}
-    
+        .hero {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: #132f4b;
+            font-size: 32px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-align: center;
+            width: max-content;
+            max-width: 90%;
+            margin: 0;
+        }
+
+        .brand-search {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto 30px;
+            gap: 10px;
+            max-width: 500px;
+        }
+
+        .brand-search input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .brand-search button {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .icon-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .icon-card p {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+
+            .hero {
+                height: 220px;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+                padding: 10px 15px;
+            }
+
+            .announcement-socials {
+                display: none !important;
+            }
+
+            .brand-search {
+                flex-direction: column;
+            }
+
+        }
+
     </style>
+
+    <!-- Structured Data -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Automotive Brands | IgnitionX",
+        "url": "https://yourdomain.com/brands.html",
+        "description": "Explore automotive brands and performance car manufacturers at IgnitionX.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "IgnitionX",
+            "url": "https://yourdomain.com/"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yourdomain.com/index.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Brands",
+                    "item": "https://yourdomain.com/brands.html"
+                }
+            ]
+        }
+    }
+
+    </script>
+
 </head>
+
+
 <body>
 
 
-<div style="background:wheat; color:#524214; padding:10px 20px; display:flex; align-items:center; justify-content:center; position:relative; font-size:14px; font-weight:600;">
-    <div style="position:absolute; left:20px; display:flex; gap:12px;">
-        <a href="https://www.facebook.com/share/1D6xXfp61p/" style="color:#524214; font-size:20px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/Abhishek012546" style="color:#524214; font-size:20px;"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/its_abhisheksapkale" style="color:#524214; font-size:20px;"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@AbhishekSapkale_06" style="color:#524214; font-size:20px;"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div style="text-align:center;"> Speak with our build experts – Call us at +(91)-7558666663</div>
-</div>
+    <!-- Announcement Bar -->
 
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo"><a href="index.html">IgnitionX</a></div>
-        <div class="nav-search">
-            <input type="text" placeholder="Search performance parts, cars, brands...">
-            <button>Search</button>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="deals.html">Deals</a></li>
-            <li><a href="support.html">Support</a></li>
-        </ul>
-        <div class="nav-actions">
-            <a href="login.html" class="nav-btn">Login</a>
-            <a href="wishlist.html" class="nav-btn">Wishlist</a>
-            <a href="cart.html" class="nav-btn cart">Cart</a>
-        </div>
-    </div>
-</nav>
+    <div class="announcement-bar"
+        style="
+        background:wheat;
+        color:#524214;
+        padding:10px 20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        font-size:14px;
+        font-weight:600;
+    ">
 
-<section class="hero" style="padding:0;">
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd9H9XJ82_4QOw1ZCn8P5421ehpgHeCTsODw&s" alt="Brands Banner">
-    </div>
-    <h2 style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#132f4b; font-size:32px; background:rgba(255,255,255,0.7); padding:10px 20px; border-radius:8px;">Explore Our Brands</h2>
-</section>
+        <div class="announcement-socials"
+            style="
+            position:absolute;
+            left:20px;
+            display:flex;
+            gap:12px;
+        ">
 
-<section class="container section">
-    <h2>All Brands</h2>
-    <div class="grid">
-        <a href="https://www.toyota.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6RdYtwQMrf6M94_TPzqFkMfrdSzlx1cbJQ&s" alt="Toyota">
-            <p>Toyota</p>
-        </a>
-        <a href="https://www.bmw.com/" class="icon-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW">
-            <p>BMW</p>
-        </a>
-        <a href="https://www.ford.com/" class="icon-card">
-            <img src="https://images.seeklogo.com/logo-png/5/2/ford-logo-png_seeklogo-56584.png" alt="Ford">
-            <p>Ford</p>
-        </a>
-        <a href="https://www.nissan.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBf7Kh0pRbupD-ByVgQELzQ4qkjztUS0jBrg&s" alt="Nissan">
-            <p>Nissan</p>
-        </a>
-        <a href="https://www.subaru.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-t7JYTfBH9kUq4tKsbzn5_vHW7hqzxPmw_g&s" alt="Subaru">
-            <p>Subaru</p>
-        </a>
-        <a href="https://www.chevrolet.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXWSLAOrcX8LYe3bDT9CW6EltjbB-fOivVRA&s" alt="Chevrolet">
-            <p>Chevrolet</p>
-        </a>
-        <a href="https://www.audi.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6K3g1KSy5ROjwyj6gMbWU6BgvLOg-BZRJbA&s" alt="Audi">
-            <p>Audi</p>
+            <a href="https://www.facebook.com/share/1D6xXfp61p/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow IgnitionX on Facebook"
+                style="color:#524214;font-size:20px;">
+
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+
             </a>
-        <a href="https://www.tata.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHp1ZE4PZ5AqLnBOrPwIJjd2g72f3ZVr5dw&s" alt="Honda">
-            <p>TATA</p>
-        </a>
-         <a href="https://www.honda.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGVNpcOtHJ86Y83mgoi2jMOOJ7DoMvujRoA&s" alt="Honda">
-            <p>Honda</p>
-        </a>
-         <a href="https://www.mazda.com/" class="icon-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFVgHnd4Bwk3vhxqYu85U25mWIuNncGULk6w&s" alt="Mazda">
-            <p>Mazda</p>
-        </a>
-        
-    </div>
-</section>
 
-<footer class="dinan-footer">
-    <div class="footer-container">
-        <div class="footer-col about">
-            <h3>About IgnitionX</h3>
-            <p>IgnitionX is a leader in aftermarket performance parts, tuning solutions, and expert support for car enthusiasts.</p>
+            <a href="https://x.com/Abhishek012546"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow IgnitionX on X"
+                style="color:#524214;font-size:20px;">
+
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+
+            </a>
+
+            <a href="https://www.instagram.com/its_abhisheksapkale"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow IgnitionX on Instagram"
+                style="color:#524214;font-size:20px;">
+
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+
+            </a>
+
+            <a href="https://www.youtube.com/@AbhishekSapkale_06"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Subscribe to IgnitionX on YouTube"
+                style="color:#524214;font-size:20px;">
+
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+
+            </a>
+
         </div>
-        <div class="footer-col links">
-            <div>
-                <h3>Shop</h3>
-                <ul>
-                    <li><a href="brands.html">Brands</a></li>
-                    <li><a href="vehicles.html">Vehicles</a></li>
-                    <li><a href="deals.html">Deals</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
+
+        <div style="text-align:center;">
+
+            Speak with our build experts – Call us at
+
+            <a href="tel:+917558666663"
+                style="color:inherit;text-decoration:none;">
+
+                +91-7558666663
+
+            </a>
+
         </div>
-        <div class="footer-col newsletter-social">
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
-                <a href="https://x.com/Abhishek012546" class="icon fab fa-twitter"></a>
-                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
-                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
-            </div>
-            <p class="copyright">© Abhishek&Co.. All Rights Reserved.</p>
-        </div>
+
     </div>
-</footer>
+
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <div class="nav-container">
+
+                <div class="nav-logo">
+
+                    <a href="index.html" aria-label="IgnitionX Home">
+
+                        IgnitionX
+
+                    </a>
+
+                </div>
+
+
+                <!-- Search -->
+
+                <div class="nav-search" role="search">
+
+                    <label for="brand-search" class="sr-only">
+
+                        Search automotive brands
+
+                    </label>
+
+                    <input
+                        type="search"
+                        id="brand-search"
+                        placeholder="Search performance parts, cars, brands..."
+                        autocomplete="off">
+
+                    <button type="button" id="search-button">
+
+                        Search
+
+                    </button>
+
+                </div>
+
+
+                <!-- Navigation Links -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="brands.html" aria-current="page">Brands</a>
+                    </li>
+
+                    <li>
+                        <a href="vehicles.html">Vehicles</a>
+                    </li>
+
+                    <li>
+                        <a href="deals.html">Deals</a>
+                    </li>
+
+                    <li>
+                        <a href="support.html">Support</a>
+                    </li>
+
+                </ul>
+
+
+                <!-- User Actions -->
+
+                <div class="nav-actions">
+
+                    <a href="login.html" class="nav-btn">
+
+                        Login
+
+                    </a>
+
+                    <a href="wishlist.html" class="nav-btn">
+
+                        Wishlist
+
+                    </a>
+
+                    <a href="cart.html" class="nav-btn cart">
+
+                        Cart
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+
+        <!-- Breadcrumb -->
+
+        <nav class="breadcrumb"
+            aria-label="Breadcrumb"
+            style="padding:15px 5%;">
+
+            <a href="index.html">Home</a>
+
+            <span aria-hidden="true"> / </span>
+
+            <span aria-current="page">Brands</span>
+
+        </nav>
+
+
+        <!-- Hero -->
+
+        <section class="hero"
+            aria-labelledby="hero-title"
+            style="padding:0;">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd9H9XJ82_4QOw1ZCn8P5421ehpgHeCTsODw&s"
+                alt="Automotive performance brands featured on IgnitionX"
+                width="1920"
+                height="280"
+                fetchpriority="high">
+
+            <h1 id="hero-title">
+
+                Explore Our Automotive Brands
+
+            </h1>
+
+        </section>
+
+
+        <!-- Brand Collection -->
+
+        <section class="container section"
+            aria-labelledby="brands-heading">
+
+            <h2 id="brands-heading">
+
+                Explore Performance Car Brands
+
+            </h2>
+
+            <p>
+
+                Discover automotive brands and explore performance vehicles,
+                aftermarket parts, and tuning solutions for your build.
+
+            </p>
+
+
+            <!-- Secondary Search -->
+
+            <div class="brand-search">
+
+                <label for="brand-filter" class="sr-only">
+
+                    Filter brands
+
+                </label>
+
+                <input
+                    type="search"
+                    id="brand-filter"
+                    placeholder="Filter brands..."
+                    autocomplete="off">
+
+                <button type="button" id="filter-button">
+
+                    Filter
+
+                </button>
+
+            </div>
+
+
+            <!-- Brand Grid -->
+
+            <div class="grid" id="brands-grid">
+
+
+                <!-- Toyota -->
+
+                <a href="https://www.toyota.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="toyota">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6RdYtwQMrf6M94_TPzqFkMfrdSzlx1cbJQ&s"
+                        alt="Toyota automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Toyota</p>
+
+                </a>
+
+
+                <!-- BMW -->
+
+                <a href="https://www.bmw.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="bmw">
+
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg"
+                        alt="BMW automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>BMW</p>
+
+                </a>
+
+
+                <!-- Ford -->
+
+                <a href="https://www.ford.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="ford">
+
+                    <img
+                        src="https://images.seeklogo.com/logo-png/5/2/ford-logo-png_seeklogo-56584.png"
+                        alt="Ford automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Ford</p>
+
+                </a>
+
+
+                <!-- Nissan -->
+
+                <a href="https://www.nissan.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="nissan">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBf7Kh0pRbupD-ByVgQELzQ4qkjztUS0jBrg&s"
+                        alt="Nissan automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Nissan</p>
+
+                </a>
+
+
+                <!-- Subaru -->
+
+                <a href="https://www.subaru.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="subaru">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-t7JYTfBH9kUq4tKsbzn5_vHW7hqzxPmw_g&s"
+                        alt="Subaru automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Subaru</p>
+
+                </a>
+
+
+                <!-- Chevrolet -->
+
+                <a href="https://www.chevrolet.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="chevrolet">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXWSLAOrcX8LYe3bDT9CW6EltjbB-fOivVRA&s"
+                        alt="Chevrolet automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Chevrolet</p>
+
+                </a>
+
+
+                <!-- Audi -->
+
+                <a href="https://www.audi.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="audi">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6K3g1KSy5ROjwyj6gMbWU6BgvLOg-BZRJbA&s"
+                        alt="Audi automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Audi</p>
+
+                </a>
+
+
+                <!-- Tata -->
+
+                <a href="https://www.tata.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="tata">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHp1ZE4PZ5AqLnBOrPwIJjd2g72f3ZVr5dw&s"
+                        alt="Tata automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Tata</p>
+
+                </a>
+
+
+                <!-- Honda -->
+
+                <a href="https://www.honda.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="honda">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGVNpcOtHJ86Y83mgoi2jMOOJ7DoMvujRoA&s"
+                        alt="Honda automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Honda</p>
+
+                </a>
+
+
+                <!-- Mazda -->
+
+                <a href="https://www.mazda.com/"
+                    class="icon-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-brand="mazda">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFVgHnd4Bwk3vhxqYu85U25mWIuNncGULk6w&s"
+                        alt="Mazda automotive brand logo"
+                        width="200"
+                        height="150"
+                        loading="lazy">
+
+                    <p>Mazda</p>
+
+                </a>
+
+
+            </div>
+
+
+            <p id="no-results"
+                style="display:none;text-align:center;padding:20px;">
+
+                No matching brands found.
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="dinan-footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-col about">
+
+                <h2>About IgnitionX</h2>
+
+                <p>
+
+                    IgnitionX is a performance automotive platform offering
+                    aftermarket parts, tuning solutions, and expert support
+                    for car enthusiasts.
+
+                </p>
+
+            </div>
+
+
+            <div class="footer-col links">
+
+                <div>
+
+                    <h2>Shop</h2>
+
+                    <ul>
+
+                        <li>
+                            <a href="brands.html">Brands</a>
+                        </li>
+
+                        <li>
+                            <a href="vehicles.html">Vehicles</a>
+                        </li>
+
+                        <li>
+                            <a href="deals.html">Deals</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h2>Support</h2>
+
+                    <ul>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Social Media -->
+
+            <div class="footer-col newsletter-social">
+
+                <div class="social-icons">
+
+                    <a href="https://www.facebook.com/share/1D6xXfp61p/"
+                        class="icon fab fa-facebook-f"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook">
+                    </a>
+
+                    <a href="https://x.com/Abhishek012546"
+                        class="icon fab fa-twitter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="X">
+                    </a>
+
+                    <a href="https://www.instagram.com/its_abhisheksapkale"
+                        class="icon fab fa-instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">
+                    </a>
+
+                    <a href="https://www.youtube.com/@AbhishekSapkale_06"
+                        class="icon fab fa-youtube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="YouTube">
+                    </a>
+
+                </div>
+
+                <p class="copyright">
+
+                    © Abhishek &amp; Co. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Brand Search Script -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const searchInput = document.getElementById("brand-search");
+
+            const brandFilter = document.getElementById("brand-filter");
+
+            const searchButton = document.getElementById("search-button");
+
+            const filterButton = document.getElementById("filter-button");
+
+            const brandCards = document.querySelectorAll(
+                "#brands-grid .icon-card"
+            );
+
+            const noResults = document.getElementById("no-results");
+
+
+            function filterBrands() {
+
+                const mainQuery = searchInput.value.trim().toLowerCase();
+
+                const secondaryQuery = brandFilter.value.trim().toLowerCase();
+
+                const query = mainQuery || secondaryQuery;
+
+                let visibleCount = 0;
+
+
+                brandCards.forEach(function (card) {
+
+                    const brandName = (
+                        card.dataset.brand || card.textContent
+                    ).toLowerCase();
+
+                    const matches = brandName.includes(query);
+
+                    card.style.display = matches ? "" : "none";
+
+                    if (matches) {
+                        visibleCount++;
+                    }
+
+                });
+
+
+                noResults.style.display =
+                    visibleCount === 0 ? "block" : "none";
+
+            }
+
+
+            searchInput.addEventListener("input", filterBrands);
+
+            brandFilter.addEventListener("input", filterBrands);
+
+            searchButton.addEventListener("click", filterBrands);
+
+            filterButton.addEventListener("click", filterBrands);
+
+
+            searchInput.addEventListener("keydown", function (event) {
+
+                if (event.key === "Enter") {
+
+                    event.preventDefault();
+
+                    filterBrands();
+
+                }
+
+            });
+
+        });
+
+    </script>
+
 
 </body>
+
 </html>

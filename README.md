@@ -52,6 +52,84 @@ The project is hosted using GitHub Pages:
 5. The website will open in your browser  
 
 ---
+**STRUCTURE:** 
+```
+Random-website/
+│
+├── index.html
+│
+├── sitemap.xml          
+├── robots.txt           
+│
+├── shop.html
+├── brands.html
+├── vehicles.html
+├── deals.html
+│
+├── engine.html
+├── exhaust.html
+├── intake.html
+├── intakepro.html
+├── brakes.html
+├── suspension.html
+├── coilover.html
+├── clutch.html
+├── downpipe.html
+├── styling.html
+├── turbo.html
+├── sequential.html
+│
+├── supra.html
+├── wrx.html
+├── evo.html
+├── civic.html
+├── 350.html
+├── ford.html
+├── camaro.html
+├── rx7.html
+├── m3.html
+├── rs5.html
+│
+├── sedans.html
+├── coupe.html
+├── hatchback.html
+├── convertible.html
+├── sports.html
+├── suv.html
+├── wagon.html
+├── electric.html
+├── classic.html
+├── track.html
+│
+├── deal1.html
+├── deal2.html
+├── deal3.html
+├── deal4.html
+│
+├── about.html
+├── contact.html
+├── faq.html
+├── support.html
+├── press.html
+├── careers.html
+│
+├── pp.html
+├── tandc.html
+├── map.html
+│
+├── login.html
+├── register.html
+├── wishlist.html
+├── cart.html
+├── payment.html
+├── success.html
+├── address.html
+├── pickup.html
+│
+├── try.js
+└── try1.css
+```
+--- 
 
 ⚠️ Disclaimer
 - This project is created only for learning and educational purposes  

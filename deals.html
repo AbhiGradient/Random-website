@@ -1,243 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Deals – IgnitionX</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="try1.css">
+    <!-- SEO Title -->
+    <title>Car Performance Deals & Offers | IgnitionX</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-/* Hero specific override */
-.hero {
-    background: linear-gradient(135deg, #132f4b, #1a466d);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    position: relative;
-}
+    <!-- SEO Description -->
+    <meta
+        name="description"
+        content="Explore the latest IgnitionX deals on performance exhausts, turbo kits, performance brakes, sport suspension and aftermarket automotive performance parts."
+    >
 
-.hero h1 {
-    font-size: 46px;
-    margin-bottom: 10px;
-}
+    <!-- Keywords -->
+    <meta
+        name="keywords"
+        content="car performance deals, automotive deals, performance parts deals, exhaust deals, turbo kit deals, performance brakes, sport suspension, aftermarket car parts, IgnitionX"
+    >
 
-.hero .tagline {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.9;
-}
+    <meta name="author" content="IgnitionX">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#132f4b">
 
-.hero .subtitle {
-    margin-top: 15px;
-    font-style: italic;
-    opacity: 0.85;
-}
+    <!-- Canonical URL
+         IMPORTANT:
+         Replace YOUR-USERNAME and YOUR-REPOSITORY with your actual GitHub Pages details. -->
+    <link
+        rel="canonical"
+        href="https://abhigradient.github.io/Random-website/deals.html"
+    >
 
-.hero-btn {
-    margin-top: 20px;
-    padding: 14px 28px;
-    background: #132f4b;
-    color: #fff;
-    border: none;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Car Performance Deals & Offers | IgnitionX">
+    <meta
+        property="og:description"
+        content="Shop featured automotive performance deals from IgnitionX, including exhaust systems, turbo kits, performance brakes and sport suspension."
+    >
+    <meta
+        property="og:url"
+        content="https://abhigradient.github.io/Random-website/deals.html"
+    >
+    <meta property="og:site_name" content="IgnitionX">
 
-.hero-btn:hover {
-    background: #0f2540;
-}
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Car Performance Deals & Offers | IgnitionX">
+    <meta
+        name="twitter:description"
+        content="Discover performance automotive parts and limited-time offers at IgnitionX."
+    >
 
-/* Deals Grid */
-.deals-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 30px;
-    padding: 40px 0;
-}
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="try1.css">
 
-.deal-card {
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
 
-.deal-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-}
+    <!--
+        Structured Data
+        Helps search engines understand the products/deals listed on this page.
+    -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "IgnitionX Performance Deals",
+        "description": "Featured deals on automotive performance parts from IgnitionX.",
+        "url": "https://abhigradient.github.io/Random-website/deals.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Featured Performance Deals",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "deal1.html",
+                    "name": "Performance Exhaust"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "deal2.html",
+                    "name": "Turbo Kit"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "deal3.html",
+                    "name": "Performance Brakes"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "deal4.html",
+                    "name": "Sport Suspension"
+                }
+            ]
+        }
+    }
+    </script>
 
-.deal-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
+    <style>
 
-.deal-info {
-    padding: 15px;
-}
+        /* =========================================
+           HERO SECTION
+        ========================================= */
 
-.deal-info h3 {
-    margin: 0;
-    font-size: 18px;
-}
+        .hero {
+            background: linear-gradient(135deg, #132f4b, #1a466d);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
 
-.deal-info p {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #555;
-}
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 10px;
+        }
 
-.price {
-    color: #e10600;
-    font-weight: bold;
-    margin-top: 6px;
-}
+        .hero .tagline {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .hero h1 { font-size: 36px; }
-}
+        .hero .subtitle {
+            margin-top: 15px;
+            font-style: italic;
+            opacity: 0.85;
+        }
 
-@media (max-width: 600px) {
-    .hero { padding: 50px 15px; }
-    .hero h1 { font-size: 28px; }
-    .deals-grid { gap: 20px; }
-}
-</style>
+        .hero-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #132f4b;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition:
+                background 0.3s,
+                transform 0.3s;
+        }
+
+        .hero-btn:hover {
+            background: #0f2540;
+            transform: translateY(-2px);
+        }
+
+        .hero-btn:focus-visible {
+            outline: 3px solid white;
+            outline-offset: 4px;
+        }
+
+
+        /* =========================================
+           DEALS GRID
+        ========================================= */
+
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .deal-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+            color: inherit;
+
+            display: block;
+
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
+        }
+
+        .deal-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .deal-card:focus-visible {
+            outline: 3px solid #132f4b;
+            outline-offset: 4px;
+        }
+
+        .deal-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .deal-info {
+            padding: 15px;
+        }
+
+        .deal-info h2,
+        .deal-info h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .deal-info p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: #e10600;
+            font-weight: bold;
+            margin-top: 6px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 6px;
+            font-weight: normal;
+        }
+
+
+        /* =========================================
+           SCREEN READER ONLY
+        ========================================= */
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 992px) {
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 50px 15px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .deals-grid {
+                gap: 20px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
 
-<div style="background:wheat;color:#524214;padding:10px 20px;display:flex;align-items:center;justify-content:center;position:relative;font-size:14px;font-weight:600;">
-    <div style="position:absolute; left:20px; display:flex; gap:12px;">
-        <a href="https://www.facebook.com/share/1D6xXfp61p/" style="color:#524214;font-size:20px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/Abhishek012546" style="color:#524214;font-size:20px;"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/its_abhisheksapkale" style="color:#524214;font-size:20px;"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@AbhishekSapkale_06" style="color:#524214;font-size:20px;"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div style="text-align:center;"> Speak with our build experts – Call us at +(91)-7558666663</div>
-</div>
 
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo"><a href="index.html">IgnitionX</a></div>
+    <!-- =========================================
+         TOP CONTACT BAR
+    ========================================= -->
 
-        <div class="nav-search">
-            <input type="text" placeholder="Search performance parts, cars, brands...">
-            <button>Search</button>
+    <div
+        style="
+            background:wheat;
+            color:#524214;
+            padding:10px 20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:relative;
+            font-size:14px;
+            font-weight:600;
+        "
+        role="banner"
+    >
+
+        <div
+            style="
+                position:absolute;
+                left:20px;
+                display:flex;
+                gap:12px;
+            "
+            aria-label="Social media links"
+        >
+
+            <a
+                href="https://www.facebook.com/share/1D6xXfp61p/"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-facebook-f"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+
+            <a
+                href="https://x.com/Abhishek012546"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on X"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-twitter"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/its_abhisheksapkale"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-instagram"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+
+            <a
+                href="https://www.youtube.com/@AbhishekSapkale_06"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-youtube"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
         </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="deals.html">Deals</a></li>
-            <li><a href="support.html">Support</a></li>
-        </ul>
 
-        <div class="nav-actions">
-            <a href="login.html" class="nav-btn">Login</a>
-            <a href="#" class="nav-btn">Wishlist</a>
-            <a href="cart.html" class="nav-btn cart">Cart</a>
-        </div>
-    </div>
-</nav>
-
-<section class="hero">
-    <h1>Hot Deals</h1>
-    <p class="tagline">Limited Time Offers</p>
-    <p class="subtitle">Get the best performance parts at unbeatable prices</p>
-    <button class="hero-btn">Shop All Deals</button>
-</section>
-
-<section class="container section">
-    <h2>Featured Deals</h2>
-    <div class="deals-grid">
-
-        <a href="deal1.html" class="deal-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTAu91mPgoy4yxEYKOHXJwMAPWj-pHDx3EQ&s" alt="Exhaust System Deal">
-            <div class="deal-info">
-                <h3>Performance Exhaust</h3>
-                <p>Upgrade your car's sound and performance.</p>
-                <p class="price">₹85,650 <span style="text-decoration: line-through; color:#999;">₹1,20,000</span></p>
-            </div>
-        </a>
-
-        <a href="deal2.html" class="deal-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOtWMipV18GXn9fuJCMPoEKfqZywkqZTPoQ&s" alt="Turbo Deal">
-            <div class="deal-info">
-                <h3>Turbo Kit</h3>
-                <p>Boost horsepower instantly.</p>
-                <p class="price">₹3,45,000 <span style="text-decoration: line-through; color:#999;">₹4,00,000</span></p>
-            </div>
-        </a>
-
-        <a href="deal3.html" class="deal-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6VEB4374quvHMed4eporLLKbJR9On7qMAw&s" alt="Brake Deal">
-            <div class="deal-info">
-                <h3>Performance Brakes</h3>
-                <p>Stop faster with high-quality brakes.</p>
-                <p class="price">₹74,900 <span style="text-decoration: line-through; color:#999;">₹90,450</span></p>
-            </div>
-        </a>
-
-        <a href="deal4.html" class="deal-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjz4Uv1cLEzHkDKrPc-wvelpaZNhKO6BUPw&s" alt="Suspension Deal">
-            <div class="deal-info">
-                <h3>Sport Suspension</h3>
-                <p>Enhance handling and ride quality.</p>
-                <p class="price">₹89,900 <span style="text-decoration: line-through; color:#999;">₹1,09,900</span></p>
-            </div>
-        </a>
-
-    </div>
-</section>
-
-<footer class="dinan-footer">
-    <div class="footer-container">
-        <div class="footer-col about">
-            <h3>About IgnitionX</h3>
-            <p>IgnitionX is a leader in aftermarket performance parts, tuning solutions, and expert support for car enthusiasts.</p>
+        <div style="text-align:center;">
+            Speak with our build experts – Call us at +(91)-7558666663
         </div>
 
-        <div class="footer-col links">
-            <div>
-                <h3>Shop</h3>
-                <ul>
-                    <li><a href="brands.html">Brands</a></li>
-                    <li><a href="vehicles.html">Vehicles</a></li>
-                    <li><a href="deals.html">Deals</a></li>
+    </div>
+
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================= -->
+
+    <header>
+
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
+
+            <div class="nav-container">
+
+
+                <!-- Logo -->
+
+                <div class="nav-logo">
+
+                    <a
+                        href="index.html"
+                        aria-label="IgnitionX Home"
+                    >
+                        IgnitionX
+                    </a>
+
+                </div>
+
+
+
+                <!-- Search -->
+
+                <form
+                    class="nav-search"
+                    action="#"
+                    method="get"
+                    role="search"
+                >
+
+                    <label
+                        for="site-search"
+                        class="sr-only"
+                    >
+                        Search IgnitionX
+                    </label>
+
+                    <input
+                        id="site-search"
+                        type="search"
+                        name="q"
+                        placeholder="Search performance parts, cars, brands..."
+                        aria-label="Search performance parts, cars, and brands"
+                    >
+
+                    <button type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+
+
+                <!-- Navigation Links -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="brands.html">
+                            Brands
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="vehicles.html">
+                            Vehicles
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="deals.html"
+                            aria-current="page"
+                        >
+                            Deals
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="support.html">
+                            Support
+                        </a>
+                    </li>
+
                 </ul>
+
+
+
+                <!-- Account Actions -->
+
+                <div class="nav-actions">
+
+                    <a
+                        href="login.html"
+                        class="nav-btn"
+                    >
+                        Login
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-btn"
+                    >
+                        Wishlist
+                    </a>
+
+                    <a
+                        href="cart.html"
+                        class="nav-btn cart"
+                    >
+                        Cart
+                    </a>
+
+                </div>
+
             </div>
-            <div>
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================= -->
+
+    <main>
+
+        <section
+            class="hero"
+            aria-labelledby="deals-heading"
+        >
+
+            <h1 id="deals-heading">
+                Hot Performance Deals
+            </h1>
+
+            <p class="tagline">
+                Limited Time Automotive Offers
+            </p>
+
+            <p class="subtitle">
+                Get performance parts and tuning upgrades
+                at exceptional prices.
+            </p>
+
+            
+
+        </section>
+
+
+
+        <!-- =========================================
+             FEATURED DEALS
+        ========================================= -->
+
+        <section
+            class="container section"
+            aria-labelledby="featured-deals-heading"
+        >
+
+            <h2 id="featured-deals-heading">
+                Featured Performance Deals
+            </h2>
+
+            <p>
+                Discover selected automotive performance parts,
+                including exhaust systems, turbo kits, performance
+                brakes, and sport suspension upgrades.
+            </p>
+
+
+            <div class="deals-grid">
+
+
+                <!-- =====================================
+                     DEAL 1
+                ====================================== -->
+
+                <a
+                    href="deal1.html"
+                    class="deal-card"
+                    aria-label="View Performance Exhaust deal"
+                >
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTAu91mPgoy4yxEYKOHXJwMAPWj-pHDx3EQ&s"
+                        alt="Performance exhaust system for automotive upgrade"
+                        width="800"
+                        height="450"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <div class="deal-info">
+
+                        <h3>
+                            Performance Exhaust
+                        </h3>
+
+                        <p>
+                            Upgrade your vehicle's exhaust note,
+                            airflow, and performance with a
+                            performance exhaust system.
+                        </p>
+
+                        <p class="price">
+                            ₹85,650
+
+                            <span class="old-price">
+                                ₹1,20,000
+                            </span>
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- =====================================
+                     DEAL 2
+                ====================================== -->
+
+                <a
+                    href="deal2.html"
+                    class="deal-card"
+                    aria-label="View Turbo Kit deal"
+                >
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOtWMipV18GXn9fuJCMPoEKfqZywkqZTPoQ&s"
+                        alt="Automotive turbocharger performance kit"
+                        width="800"
+                        height="450"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <div class="deal-info">
+
+                        <h3>
+                            Turbo Kit
+                        </h3>
+
+                        <p>
+                            Upgrade your engine with a
+                            performance turbo kit designed
+                            for increased power potential.
+                        </p>
+
+                        <p class="price">
+                            ₹3,45,000
+
+                            <span class="old-price">
+                                ₹4,00,000
+                            </span>
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- =====================================
+                     DEAL 3
+                ====================================== -->
+
+                <a
+                    href="deal3.html"
+                    class="deal-card"
+                    aria-label="View Performance Brakes deal"
+                >
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6VEB4374quvHMed4eporLLKbJR9On7qMAw&s"
+                        alt="High-performance automotive brake system"
+                        width="800"
+                        height="450"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <div class="deal-info">
+
+                        <h3>
+                            Performance Brakes
+                        </h3>
+
+                        <p>
+                            Improve braking response and stopping
+                            performance with high-quality
+                            performance brake components.
+                        </p>
+
+                        <p class="price">
+                            ₹74,900
+
+                            <span class="old-price">
+                                ₹90,450
+                            </span>
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- =====================================
+                     DEAL 4
+                ====================================== -->
+
+                <a
+                    href="deal4.html"
+                    class="deal-card"
+                    aria-label="View Sport Suspension deal"
+                >
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjz4Uv1cLEzHkDKrPc-wvelpaZNhKO6BUPw&s"
+                        alt="Sport performance suspension system"
+                        width="800"
+                        height="450"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <div class="deal-info">
+
+                        <h3>
+                            Sport Suspension
+                        </h3>
+
+                        <p>
+                            Enhance handling, cornering response,
+                            and ride characteristics with a
+                            sport suspension upgrade.
+                        </p>
+
+                        <p class="price">
+                            ₹89,900
+
+                            <span class="old-price">
+                                ₹1,09,900
+                            </span>
+                        </p>
+
+                    </div>
+
+                </a>
+
+
             </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="dinan-footer">
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+
+            <div class="footer-col about">
+
+                <h3>
+                    About IgnitionX
+                </h3>
+
+                <p>
+                    IgnitionX is a performance automotive platform
+                    featuring aftermarket performance parts, tuning
+                    solutions, vehicle categories, automotive deals,
+                    and expert support for car enthusiasts.
+                </p>
+
+            </div>
+
+
+
+            <!-- Footer Links -->
+
+            <div class="footer-col links">
+
+
+                <div>
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="brands.html">
+                                Brands
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="vehicles.html">
+                                Vehicles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="deals.html"
+                                aria-current="page"
+                            >
+                                Deals
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div>
+
+                    <h3>
+                        Support
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Social -->
+
+            <div class="footer-col newsletter-social">
+
+                <div
+                    class="social-icons"
+                    aria-label="Social media links"
+                >
+
+                    <a
+                        href="https://www.facebook.com/share/1D6xXfp61p/"
+                        class="icon fab fa-facebook-f"
+                        aria-label="IgnitionX on Facebook"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+                    <a
+                        href="https://x.com/Abhishek012546"
+                        class="icon fab fa-twitter"
+                        aria-label="IgnitionX on X"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+                    <a
+                        href="https://www.instagram.com/its_abhisheksapkale"
+                        class="icon fab fa-instagram"
+                        aria-label="IgnitionX on Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+                    <a
+                        href="https://www.youtube.com/@AbhishekSapkale_06"
+                        class="icon fab fa-youtube"
+                        aria-label="IgnitionX on YouTube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+                </div>
+
+
+                <p class="copyright">
+                    © Abhishek&Co.. All Rights Reserved.
+                </p>
+
+            </div>
+
+
         </div>
 
-        <div class="footer-col newsletter-social">
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
-                <a href="https://x.com/Abhishek012546" class="icon fab fa-twitter"></a>
-                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
-                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
-            </div>
-            <p class="copyright">© Abhishek&Co.. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+
 
 </body>
+
 </html>

@@ -1,0 +1,38 @@
+# ==========================================================
+# IgnitionX - Robots.txt
+# GitHub Pages
+# ==========================================================
+
+User-agent: *
+
+# ----------------------------------------------------------
+# Allow public SEO/content pages
+# ----------------------------------------------------------
+
+Allow: /
+
+# ----------------------------------------------------------
+# Block user account and transaction pages
+# ----------------------------------------------------------
+
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /wishlist.html
+Disallow: /cart.html
+Disallow: /payment.html
+Disallow: /success.html
+Disallow: /address.html
+Disallow: /pickup.html
+
+# ----------------------------------------------------------
+# Block development / implementation files
+# ----------------------------------------------------------
+
+Disallow: /try.js
+Disallow: /try1.css
+
+# ----------------------------------------------------------
+# Sitemap
+# ----------------------------------------------------------
+
+Sitemap: https://abhigradient.github.io/Random-website/sitemap.xml

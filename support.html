@@ -1,260 +1,1140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Support – IgnitionX</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="try1.css">
+    <!-- SEO Title -->
+    <title>Automotive Support & Help | IgnitionX</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-/* Support Page Specific CSS */
-.hero {
-    background: linear-gradient(135deg, #132f4b, #1a466d);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    position: relative;
-}
+    <!-- SEO Description -->
+    <meta
+        name="description"
+        content="Get automotive performance support from IgnitionX. Find answers to common questions, contact our support team, and get help with performance parts, installation, shipping, returns, and vehicle upgrades."
+    >
 
-.hero h1 {
-    font-size: 46px;
-    margin-bottom: 10px;
-}
+    <!-- SEO Keywords -->
+    <meta
+        name="keywords"
+        content="automotive support, car performance support, performance parts help, automotive FAQ, installation help, shipping support, car parts returns, IgnitionX support"
+    >
 
-.hero p.subtitle {
-    margin-top: 10px;
-    font-style: italic;
-    opacity: 0.85;
-}
+    <meta name="author" content="IgnitionX">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#132f4b">
 
-/* Support Sections */
-.support-section {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: auto;
-}
+    <!-- Canonical URL
+         Replace YOUR-USERNAME and YOUR-REPOSITORY
+         with your actual GitHub Pages URL. -->
+    <link
+        rel="canonical"
+        href="https://abhigradient.github.io/Random-website/support.html"
+    >
 
-.support-section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
-}
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
 
-.faq, .contact, .live-chat {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    padding: 25px;
-    margin-bottom: 30px;
-}
+    <meta
+        property="og:title"
+        content="Automotive Support & Help | IgnitionX"
+    >
 
-.faq h3, .contact h3, .live-chat h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #132f4b;
-}
+    <meta
+        property="og:description"
+        content="Get help with automotive performance parts, installation, shipping, returns, and vehicle upgrades through IgnitionX support."
+    >
 
-.faq p, .contact p, .live-chat p {
-    font-size: 15px;
-    color: #333;
-    line-height: 1.6;
-}
+    <meta
+        property="og:url"
+        content="https://abhigradient.github.io/Random-website/support.html"
+    >
 
-.contact form {
-    display: grid;
-    gap: 15px;
-}
+    <meta
+        property="og:site_name"
+        content="IgnitionX"
+    >
 
-.contact input, .contact textarea {
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
+    <!-- Twitter / X -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
 
-.contact button {
-    background: #132f4b;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-}
+    <meta
+        name="twitter:title"
+        content="Automotive Support & Help | IgnitionX"
+    >
 
-.contact button:hover {
-    background: #0f2540;
-}
+    <meta
+        name="twitter:description"
+        content="Find automotive performance support, FAQs, installation information, shipping help, and contact options at IgnitionX."
+    >
 
-.support-info {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+    <!-- Main Stylesheet -->
+    <link
+        rel="stylesheet"
+        href="try1.css"
+    >
 
-.support-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    flex: 1 1 250px;
-    transition: transform 0.3s;
-}
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
 
-.support-card:hover {
-    transform: translateY(-5px);
-}
 
-.support-card i {
-    font-size: 28px;
-    color: #132f4b;
-    margin-bottom: 10px;
-}
+    <!-- =========================================
+         STRUCTURED DATA
+    ========================================== -->
 
-.support-card h4 {
-    margin-bottom: 8px;
-    font-size: 18px;
-    color: #132f4b;
-}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "name": "IgnitionX Support FAQ",
+        "description": "Frequently asked questions about IgnitionX automotive performance products and support.",
+        "url": "https://abhigradient.github.io/Random-website/support.html",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does shipping take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Standard shipping typically takes 5-7 business days for US orders."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide installation guides?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, every part comes with a detailed installation guide or video tutorial."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I return a product if it doesn't fit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eligible products can be returned according to the applicable return policy within 30 days."
+                }
+            }
+        ]
+    }
+    </script>
 
-.support-card p {
-    font-size: 14px;
-    color: #333;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero h1 { font-size: 36px; }
-    .support-info { flex-direction: column; align-items: center; }
-}
-</style>
+    <style>
+
+        /* =========================================
+           SUPPORT PAGE HERO
+        ========================================= */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #132f4b,
+                #1a466d
+            );
+
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 10px;
+        }
+
+        .hero p.subtitle {
+            margin-top: 10px;
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+
+        /* =========================================
+           SUPPORT SECTIONS
+        ========================================= */
+
+        .support-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .support-section > h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .faq,
+        .contact,
+        .live-chat {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================================
+           FAQ
+        ========================================= */
+
+        .faq h2,
+        .contact h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #132f4b;
+        }
+
+        .faq h3 {
+            font-size: 17px;
+            margin-top: 22px;
+            margin-bottom: 6px;
+            color: #132f4b;
+        }
+
+        .faq p,
+        .contact p,
+        .live-chat p {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .faq p {
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================================
+           CONTACT FORM
+        ========================================= */
+
+        .contact form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .contact label {
+            font-weight: 600;
+            color: #132f4b;
+            font-size: 14px;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+        .contact input:focus,
+        .contact textarea:focus {
+            outline: 2px solid #132f4b;
+            outline-offset: 1px;
+            border-color: #132f4b;
+        }
+
+        .contact textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .contact button {
+            background: #132f4b;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition:
+                background 0.3s,
+                transform 0.2s;
+        }
+
+        .contact button:hover {
+            background: #0f2540;
+            transform: translateY(-1px);
+        }
+
+        .contact button:focus-visible {
+            outline: 3px solid #132f4b;
+            outline-offset: 3px;
+        }
+
+
+        /* =========================================
+           FORM SUCCESS MESSAGE
+        ========================================= */
+
+        .form-message {
+            display: none;
+            padding: 12px 15px;
+            margin-top: 5px;
+            border-radius: 6px;
+            background: #e8f5e9;
+            color: #1b5e20;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .form-message.show {
+            display: block;
+        }
+
+
+        /* =========================================
+           SUPPORT CARDS
+        ========================================= */
+
+        .support-info {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .support-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            flex: 1 1 250px;
+            transition: transform 0.3s;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .support-card i {
+            font-size: 28px;
+            color: #132f4b;
+            margin-bottom: 10px;
+        }
+
+        .support-card h3 {
+            margin-bottom: 8px;
+            font-size: 18px;
+            color: #132f4b;
+        }
+
+        .support-card p {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .support-card a {
+            color: #132f4b;
+            font-weight: 600;
+        }
+
+
+        /* =========================================
+           SCREEN READER ONLY
+        ========================================= */
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .support-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .support-card {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 55px 15px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .support-section {
+                padding: 35px 15px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
 
-<div style="background:wheat;color:#524214;padding:10px 20px;display:flex;align-items:center;justify-content:center;position:relative;font-size:14px;font-weight:600;">
-    <div style="position:absolute; left:20px; display:flex; gap:12px;">
-        <a href="https://www.facebook.com/share/1D6xXfp61p/" style="color:#524214;font-size:20px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/Abhishek012546" style="color:#524214;font-size:20px;"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/its_abhisheksapkale" style="color:#524214;font-size:20px;"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@AbhishekSapkale_06" style="color:#524214;font-size:20px;"><i class="fab fa-youtube"></i></a>
+
+    <!-- =========================================
+         TOP CONTACT BAR
+    ========================================== -->
+
+    <div
+        style="
+            background:wheat;
+            color:#524214;
+            padding:10px 20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:relative;
+            font-size:14px;
+            font-weight:600;
+        "
+        role="banner"
+    >
+
+        <div
+            style="
+                position:absolute;
+                left:20px;
+                display:flex;
+                gap:12px;
+            "
+            aria-label="Social media links"
+        >
+
+            <a
+                href="https://www.facebook.com/share/1D6xXfp61p/"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-facebook-f"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+
+            <a
+                href="https://x.com/Abhishek012546"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on X"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-twitter"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/its_abhisheksapkale"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-instagram"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+
+            <a
+                href="https://www.youtube.com/@AbhishekSapkale_06"
+                style="color:#524214;font-size:20px;"
+                aria-label="IgnitionX on YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i
+                    class="fab fa-youtube"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </div>
+
+
+        <div style="text-align:center;">
+            Speak with our build experts – Call us at +(91)-7558666663
+        </div>
+
     </div>
-    <div style="text-align:center;"> Speak with our build experts – Call us at +(91)-7558666663</div>
-</div>
 
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo"><a href="index.html">IgnitionX</a></div>
-        <div class="nav-search">
-            <input type="text" placeholder="Search performance parts, cars, brands...">
-            <button>Search</button>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="deals.html">Deals</a></li>
-            <li><a href="support.html">Support</a></li>
-        </ul>
-        <div class="nav-actions">
-            <a href="login.html" class="nav-btn">Login</a>
-            <a href="wishlist.html" class="nav-btn">Wishlist</a>
-            <a href="cart.html" class="nav-btn cart">Cart</a>
-        </div>
-    </div>
-</nav>
 
-<section class="hero">
-    <h1>We're Here to Help</h1>
-    <p class="subtitle">Professional support for all your performance needs</p>
-</section>
 
-<section class="support-section">
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
 
-        <div class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <p><strong>Q1:</strong> How long does shipping take?</p>
-        <p><strong>A:</strong> Standard shipping typically takes 5-7 business days for US orders.</p>
-        <p><strong>Q2:</strong> Do you provide installation guides?</p>
-        <p><strong>A:</strong> Yes, every part comes with a detailed installation guide or video tutorial.</p>
-        <p><strong>Q3:</strong> Can I return a product if it doesn't fit?</p>
-        <p><strong>A:</strong> Absolutely. Check our return policy for eligible returns within 30 days.</p>
-    </div>
+    <header>
 
-        <div class="contact">
-        <h2>Contact Us</h2>
-        <form id="supportForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea rows="5" placeholder="How can we help you?" required></textarea>
-            <button type="submit" onclick="alert('Message sent! We will get back to you soon.')">Send Message</button>
-        </form>
-    </div>
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
 
-        <div class="support-info">
-        <div class="support-card">
-            <i class="fas fa-headset"></i>
-            <h4>Live Chat</h4>
-            <p>Chat instantly with our support experts during business hours.</p>
-        </div>
-        <div class="support-card">
-            <i class="fas fa-envelope"></i>
-            <h4>Email Support</h4>
-            <p>Send us an email at <a href="mailto:abhisheksapkale@hotmail.com">support@ignitionx.com</a></p>
-        </div>
-        <div class="support-card">
-            <i class="fas fa-phone"></i>
-            <h4>Call Us</h4>
-            <p>+1-888-627-7373 (Mon-Fri, 9am-6pm)</p>
-        </div>
-    </div>
+            <div class="nav-container">
 
-</section>
 
-<footer class="dinan-footer">
-    <div class="footer-container">
-        <div class="footer-col about">
-            <h3>About IgnitionX</h3>
-            <p>IgnitionX is a leader in aftermarket performance parts, tuning solutions, and expert support for car enthusiasts.</p>
-        </div>
-        <div class="footer-col links">
-            <div>
-                <h3>Shop</h3>
-                <ul>
-                    <li><a href="brands.html">Brands</a></li>
-                    <li><a href="vehicles.html">Vehicles</a></li>
-                    <li><a href="deals.html">Deals</a></li>
+                <!-- Logo -->
+
+                <div class="nav-logo">
+
+                    <a
+                        href="index.html"
+                        aria-label="IgnitionX Home"
+                    >
+                        IgnitionX
+                    </a>
+
+                </div>
+
+
+                <!-- Search -->
+
+                <form
+                    class="nav-search"
+                    action="#"
+                    method="get"
+                    role="search"
+                >
+
+                    <label
+                        for="site-search"
+                        class="sr-only"
+                    >
+                        Search IgnitionX
+                    </label>
+
+                    <input
+                        id="site-search"
+                        type="search"
+                        name="q"
+                        placeholder="Search performance parts, cars, brands..."
+                        aria-label="Search performance parts, cars, and brands"
+                    >
+
+                    <button type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+
+                <!-- Navigation -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="brands.html">
+                            Brands
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="vehicles.html">
+                            Vehicles
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="deals.html">
+                            Deals
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="support.html"
+                            aria-current="page"
+                        >
+                            Support
+                        </a>
+                    </li>
+
                 </ul>
+
+
+                <!-- Account Actions -->
+
+                <div class="nav-actions">
+
+                    <a
+                        href="login.html"
+                        class="nav-btn"
+                    >
+                        Login
+                    </a>
+
+                    <a
+                        href="wishlist.html"
+                        class="nav-btn"
+                    >
+                        Wishlist
+                    </a>
+
+                    <a
+                        href="cart.html"
+                        class="nav-btn cart"
+                    >
+                        Cart
+                    </a>
+
+                </div>
+
             </div>
-            <div>
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            aria-labelledby="support-heading"
+        >
+
+            <h1 id="support-heading">
+                Automotive Support & Help
+            </h1>
+
+            <p class="subtitle">
+                Professional support for your performance
+                parts and automotive needs.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SUPPORT CONTENT
+        ========================================== -->
+
+        <section
+            class="support-section"
+            aria-labelledby="support-content-heading"
+        >
+
+            <h2
+                id="support-content-heading"
+                class="sr-only"
+            >
+                IgnitionX Support Resources
+            </h2>
+
+
+            <!-- =====================================
+                 FAQ
+            ====================================== -->
+
+            <div
+                class="faq"
+                id="faq"
+            >
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+
+                <h3>
+                    How long does shipping take?
+                </h3>
+
+                <p>
+                    Standard shipping typically takes
+                    5-7 business days for US orders.
+                </p>
+
+
+                <h3>
+                    Do you provide installation guides?
+                </h3>
+
+                <p>
+                    Yes, every part comes with a detailed
+                    installation guide or video tutorial.
+                </p>
+
+
+                <h3>
+                    Can I return a product if it doesn't fit?
+                </h3>
+
+                <p>
+                    Eligible products can be returned according
+                    to the applicable return policy within 30 days.
+                </p>
+
             </div>
+
+
+
+            <!-- =====================================
+                 CONTACT FORM
+            ====================================== -->
+
+            <div
+                class="contact"
+                id="contact"
+            >
+
+                <h2>
+                    Contact Us
+                </h2>
+
+                <p>
+                    Have a question about a performance part,
+                    installation, shipping, or your vehicle?
+                    Send us a message and our support team can
+                    assist you.
+                </p>
+
+
+                <form
+                    id="supportForm"
+                    novalidate
+                >
+
+                    <label for="support-name">
+                        Your Name
+                    </label>
+
+                    <input
+                        id="support-name"
+                        name="name"
+                        type="text"
+                        placeholder="Your Name"
+                        autocomplete="name"
+                        required
+                    >
+
+
+                    <label for="support-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        id="support-email"
+                        name="email"
+                        type="email"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        required
+                    >
+
+
+                    <label for="support-message">
+                        How can we help you?
+                    </label>
+
+                    <textarea
+                        id="support-message"
+                        name="message"
+                        rows="5"
+                        placeholder="How can we help you?"
+                        required
+                    ></textarea>
+
+
+                    <button
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+
+
+                    <div
+                        id="formMessage"
+                        class="form-message"
+                        role="status"
+                        aria-live="polite"
+                    >
+                        Thank you for contacting IgnitionX.
+                        Your message has been prepared successfully.
+                        For this static website, please use the email
+                        address below to send your enquiry directly.
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 SUPPORT OPTIONS
+            ====================================== -->
+
+            <div class="support-info">
+
+
+                <!-- Live Chat -->
+
+                <div class="support-card">
+
+                    <i
+                        class="fas fa-headset"
+                        aria-hidden="true"
+                    ></i>
+
+                    <h3>
+                        Live Chat
+                    </h3>
+
+                    <p>
+                        Chat instantly with our support experts
+                        during business hours.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Email -->
+
+                <div class="support-card">
+
+                    <i
+                        class="fas fa-envelope"
+                        aria-hidden="true"
+                    ></i>
+
+                    <h3>
+                        Email Support
+                    </h3>
+
+                    <p>
+                        Send us an email at
+                        <a
+                            href="mailto:abhisheksapkale@hotmail.com"
+                        >
+                            abhisheksapkale@hotmail.com
+                        </a>
+                    </p>
+
+                </div>
+
+
+
+                <!-- Phone -->
+
+                <div class="support-card">
+
+                    <i
+                        class="fas fa-phone"
+                        aria-hidden="true"
+                    ></i>
+
+                    <h3>
+                        Call Us
+                    </h3>
+
+                    <p>
+                        +1-888-627-7373
+                        <br>
+                        Mon-Fri, 9am-6pm
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="dinan-footer">
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+
+            <div class="footer-col about">
+
+                <h3>
+                    About IgnitionX
+                </h3>
+
+                <p>
+                    IgnitionX is a performance automotive platform
+                    featuring aftermarket performance parts, tuning
+                    solutions, vehicle categories, automotive deals,
+                    and expert support for car enthusiasts.
+                </p>
+
+            </div>
+
+
+
+            <!-- Shop Links -->
+
+            <div class="footer-col links">
+
+                <div>
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="brands.html">
+                                Brands
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="vehicles.html">
+                                Vehicles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="deals.html">
+                                Deals
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Support Links -->
+
+                <div>
+
+                    <h3>
+                        Support
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="support.html"
+                                aria-current="page"
+                            >
+                                Support
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Social Media -->
+
+            <div class="footer-col newsletter-social">
+
+                <div
+                    class="social-icons"
+                    aria-label="Social media links"
+                >
+
+                    <a
+                        href="https://www.facebook.com/share/1D6xXfp61p/"
+                        class="icon fab fa-facebook-f"
+                        aria-label="IgnitionX on Facebook"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+
+                    <a
+                        href="https://x.com/Abhishek012546"
+                        class="icon fab fa-twitter"
+                        aria-label="IgnitionX on X"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+
+                    <a
+                        href="https://www.instagram.com/its_abhisheksapkale"
+                        class="icon fab fa-instagram"
+                        aria-label="IgnitionX on Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+
+                    <a
+                        href="https://www.youtube.com/@AbhishekSapkale_06"
+                        class="icon fab fa-youtube"
+                        aria-label="IgnitionX on YouTube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+
+                </div>
+
+
+                <p class="copyright">
+                    © Abhishek&Co.. All Rights Reserved.
+                </p>
+
+            </div>
+
+
         </div>
-        <div class="footer-col newsletter-social">
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
-                <a href="https://x.com/Abhishek012546" class="icon fab fa-twitter"></a>
-                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
-                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
-            </div>
-            <p class="copyright">© Abhishek&Co.. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>
-<script> document.getElementById('supportForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-    window.location.href = 'index.html'; // Redirect instantly to homepage
-});
-</script>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         FORM JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+        const supportForm =
+            document.getElementById("supportForm");
+
+        const formMessage =
+            document.getElementById("formMessage");
+
+
+        supportForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById("support-name").value.trim();
+
+                const email =
+                    document.getElementById("support-email").value.trim();
+
+                const message =
+                    document.getElementById("support-message").value.trim();
+
+
+                if (!name || !email || !message) {
+
+                    formMessage.textContent =
+                        "Please complete all fields before submitting.";
+
+                    formMessage.classList.add("show");
+
+                    return;
+                }
+
+
+                formMessage.textContent =
+                    "Thank you, " +
+                    name +
+                    "! Your enquiry has been received on this page. " +
+                    "Because IgnitionX is hosted as a static GitHub Pages website, " +
+                    "the form does not send data to a server. Please use " +
+                    "abhisheksapkale@hotmail.com to send your enquiry directly.";
+
+
+                formMessage.classList.add("show");
+
+
+                supportForm.reset();
+
+            }
+        );
+
+    </script>
+
 
 </body>
+
 </html>

@@ -2,141 +2,504 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Station Wagon Mods – IgnitionX</title>
+
+    <title>Station Wagon Performance Mods & Parts | IgnitionX</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="Shop station wagon performance mods including engine upgrades, exhaust systems, suspension, wheels, styling, and cargo solutions from IgnitionX.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#16324f">
+
+    <link rel="canonical"
+          href="https://abhigradient.github.io/Random-website/station-wagon.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="Station Wagon Performance Mods & Parts | IgnitionX">
+    <meta property="og:description"
+          content="Explore performance upgrades for station wagons, including engine, exhaust, suspension, wheels, styling, and cargo solutions.">
+    <meta property="og:url"
+          content="https://abhigradient.github.io/Random-website/station-wagon.html">
+    <meta property="og:site_name" content="IgnitionX">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title"
+          content="Station Wagon Performance Mods | IgnitionX">
+    <meta name="twitter:description"
+          content="Performance parts and upgrades for station wagons from IgnitionX.">
+
     <link rel="stylesheet" href="try1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .wagon-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .wagon-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .wagon-card-inner {
+            height: 100%;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 25px 22px;
+            text-align: center;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease,
+                        border-color 0.3s ease;
+            background: #fff;
+        }
+
+        .wagon-card-inner:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+            border-color: #16324f;
+        }
+
+        .wagon-card-inner i {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .wagon-card-inner h2 {
+            font-size: 21px;
+            margin: 8px 0;
+        }
+
+        .wagon-card-inner p {
+            color: #666;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .seo-intro {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 900px) {
+            .wagon-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .wagon-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Station Wagon Performance Mods",
+        "description": "Performance parts and modifications for station wagons.",
+        "url": "https://abhigradient.github.io/Random-website/station-wagon.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "IgnitionX",
+            "url": "https://abhigradient.github.io/Random-website/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Station Wagon Performance Parts"
+        }
+    }
+    </script>
 </head>
+
 <body>
 
-<div style="background:wheat;color:#524214;padding:10px;text-align:center;font-weight:600;">
-    Speak with our build experts – Call us at +(91)-7558666663
+<!-- Contact Bar -->
+<div style="
+    background:wheat;
+    color:#524214;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    font-size:14px;
+    font-weight:600;
+">
+
+    <div style="
+        position:absolute;
+        left:20px;
+        display:flex;
+        gap:12px;
+    ">
+        <a href="https://www.facebook.com/share/1D6xXfp61p/"
+           aria-label="IgnitionX on Facebook"
+           style="color:#524214;">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://x.com/Abhishek012546"
+           aria-label="IgnitionX on X"
+           style="color:#524214;">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/its_abhisheksapkale"
+           aria-label="IgnitionX on Instagram"
+           style="color:#524214;">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@AbhishekSapkale_06"
+           aria-label="IgnitionX on YouTube"
+           style="color:#524214;">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+
+    <div>
+        Speak with our build experts –
+        <a href="tel:+917558666663"
+           style="color:inherit;text-decoration:none;">
+            Call us at +(91)-7558666663
+        </a>
+    </div>
 </div>
 
-<nav class="navbar">
+
+<!-- Navigation -->
+<nav class="navbar" aria-label="Main navigation">
+
     <div class="nav-container">
+
         <div class="nav-logo">
             <a href="index.html">IgnitionX</a>
         </div>
 
-        <div class="nav-search">
-            <input type="text" placeholder="Search station wagon mods...">
-            <button>Search</button>
-        </div>
+        <form class="nav-search"
+              action="shop.html"
+              method="get"
+              role="search">
+
+            <input
+                type="search"
+                name="q"
+                placeholder="Search station wagon mods..."
+                aria-label="Search station wagon performance parts"
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
 
         <ul class="nav-links">
+
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
+            <li><a href="brands.html">Brands</a></li>
             <li><a href="vehicles.html">Vehicles</a></li>
             <li><a href="deals.html">Deals</a></li>
             <li><a href="support.html">Support</a></li>
+
         </ul>
 
         <div class="nav-actions">
-            <a href="cart.html" class="nav-btn cart">Cart</a>
+
+            <a href="login.html" class="nav-btn">
+                Login
+            </a>
+
+            <a href="wishlist.html" class="nav-btn">
+                Wishlist
+            </a>
+
+            <a href="cart.html" class="nav-btn cart">
+                Cart
+            </a>
+
         </div>
+
     </div>
 </nav>
 
-<section class="container section" style="max-width:1000px;text-align:center;">
-    <h1>Station Wagon Performance Mods</h1>
-    <p style="color:#777;font-size:18px;">
-        Upgrade your station wagon with enhanced performance, comfort, and cargo capabilities.
-    </p>
-</section>
 
-<section class="container section" style="max-width:1100px;">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;">
+<main>
 
-        <a href="wagon-engine.html" style="text-decoration:none;color:inherit;">
-            <div style="border:2px solid #ddd;border-radius:12px;padding:22px;text-align:center;">
-                <i class="fas fa-cogs" style="font-size:34px;"></i>
-                <h3>Engine Upgrades</h3>
-                <p>Turbo kits, ECU tuning, intakes</p>
-            </div>
-        </a>
+    <!-- Introduction -->
+    <section class="container section"
+             style="max-width:1000px;text-align:center;">
 
-        <a href="wagon-exhaust.html" style="text-decoration:none;color:inherit;">
-            <div style="border:2px solid #ddd;border-radius:12px;padding:22px;text-align:center;">
-                <i class="fas fa-fire" style="font-size:34px;"></i>
-                <h3>Exhaust Systems</h3>
-                <p>Performance exhausts, downpipes, mufflers</p>
-            </div>
-        </a>
+        <h1>Station Wagon Performance Mods</h1>
 
-        <a href="wagon-suspension.html" style="text-decoration:none;color:inherit;">
-            <div style="border:2px solid #ddd;border-radius:12px;padding:22px;text-align:center;">
-                <i class="fas fa-road" style="font-size:34px;"></i>
-                <h3>Suspension</h3>
-                <p>Coilovers, springs, sway bars</p>
-            </div>
-        </a>
+        <p class="seo-intro"
+           style="color:#777;font-size:18px;">
 
-        <a href="wagon-wheels.html" style="text-decoration:none;color:inherit;">
-            <div style="border:2px solid #ddd;border-radius:12px;padding:22px;text-align:center;">
-                <i class="fas fa-circle-notch" style="font-size:34px;"></i>
-                <h3>Wheels & Tires</h3>
-                <p>Alloys, performance tires</p>
-            </div>
-        </a>
+            Upgrade your station wagon with performance parts designed
+            for stronger engine output, improved handling, better exhaust
+            flow, enhanced styling, and practical cargo solutions.
+            IgnitionX brings together station wagon performance upgrades
+            for enthusiasts building capable street, touring, and
+            performance-oriented cars.
 
-        <a href="wagon-styling.html" style="text-decoration:none;color:inherit;">
-            <div style="border:2px solid #ddd;border-radius:12px;padding:22px;text-align:center;">
-                <i class="fas fa-paint-brush" style="font-size:34px;"></i>
-                <h3>Exterior Styling</h3>
-                <p>Body kits, roof racks, spoilers</p>
-            </div>
-        </a>
+        </p>
 
-        <a href="wagon-cargo.html" style="text-decoration:none;color:inherit;">
-            <div style="border:2px solid #ddd;border-radius:12px;padding:22px;text-align:center;">
-                <i class="fas fa-box" style="font-size:34px;"></i>
-                <h3>Interior & Cargo</h3>
-                <p>Cargo organizers, seats, comfort mods</p>
-            </div>
-        </a>
+    </section>
 
-    </div>
-</section>
 
-<footer class="dinan-footer">
-    <div class="footer-container">
-        <div class="footer-col about">
-            <h3>About IgnitionX</h3>
-            <p>
-                IgnitionX delivers premium aftermarket parts trusted by enthusiasts worldwide.
-            </p>
+    <!-- Performance Categories -->
+    <section class="container section"
+             style="max-width:1100px;"
+             aria-labelledby="wagon-mods-heading">
+
+        <h2 id="wagon-mods-heading">
+            Station Wagon Performance Parts
+        </h2>
+
+        <div class="wagon-grid">
+
+            <a href="wagon-engine.html"
+               class="wagon-card">
+
+                <div class="wagon-card-inner">
+
+                    <i class="fas fa-cogs"
+                       aria-hidden="true"></i>
+
+                    <h2>Engine Upgrades</h2>
+
+                    <p>
+                        Turbo kits, ECU tuning, intakes and
+                        performance engine upgrades.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="wagon-exhaust.html"
+               class="wagon-card">
+
+                <div class="wagon-card-inner">
+
+                    <i class="fas fa-fire"
+                       aria-hidden="true"></i>
+
+                    <h2>Exhaust Systems</h2>
+
+                    <p>
+                        Performance exhausts, downpipes,
+                        mufflers and improved exhaust flow.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="wagon-suspension.html"
+               class="wagon-card">
+
+                <div class="wagon-card-inner">
+
+                    <i class="fas fa-road"
+                       aria-hidden="true"></i>
+
+                    <h2>Suspension</h2>
+
+                    <p>
+                        Coilovers, springs, sway bars and
+                        handling-focused suspension upgrades.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="wagon-wheels.html"
+               class="wagon-card">
+
+                <div class="wagon-card-inner">
+
+                    <i class="fas fa-circle-notch"
+                       aria-hidden="true"></i>
+
+                    <h2>Wheels &amp; Tires</h2>
+
+                    <p>
+                        Alloy wheels and performance tires
+                        for improved appearance and grip.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="wagon-styling.html"
+               class="wagon-card">
+
+                <div class="wagon-card-inner">
+
+                    <i class="fas fa-paint-brush"
+                       aria-hidden="true"></i>
+
+                    <h2>Exterior Styling</h2>
+
+                    <p>
+                        Body kits, roof racks, spoilers and
+                        exterior performance styling.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="wagon-cargo.html"
+               class="wagon-card">
+
+                <div class="wagon-card-inner">
+
+                    <i class="fas fa-box"
+                       aria-hidden="true"></i>
+
+                    <h2>Interior &amp; Cargo</h2>
+
+                    <p>
+                        Cargo organizers, seats and comfort
+                        upgrades for practical wagon builds.
+                    </p>
+
+                </div>
+
+            </a>
+
         </div>
 
+    </section>
+
+
+    <!-- SEO Content -->
+    <section class="container section"
+             style="max-width:1000px;">
+
+        <h2>Build a Better Performance Wagon</h2>
+
+        <p style="line-height:1.8;">
+
+            Station wagons combine everyday practicality with excellent
+            performance potential. Engine upgrades can improve power,
+            exhaust systems can enhance airflow, and suspension upgrades
+            can improve handling and road control. Wheels, tires,
+            exterior styling and cargo accessories can complete a
+            station wagon build without sacrificing everyday usability.
+
+        </p>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="dinan-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col about">
+
+            <h3>About IgnitionX</h3>
+
+            <p>
+                IgnitionX delivers premium aftermarket performance parts,
+                tuning solutions and automotive support for enthusiasts.
+            </p>
+
+        </div>
+
+
         <div class="footer-col links">
+
             <div>
+
                 <h3>Shop</h3>
+
                 <ul>
                     <li><a href="brands.html">Brands</a></li>
                     <li><a href="vehicles.html">Vehicles</a></li>
                     <li><a href="deals.html">Deals</a></li>
                 </ul>
+
             </div>
+
+
             <div>
+
                 <h3>Support</h3>
+
                 <ul>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+
             </div>
+
         </div>
 
+
         <div class="footer-col newsletter-social">
+
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
-                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
-                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
+
+                <a href="https://www.facebook.com/share/1D6xXfp61p/"
+                   class="icon fab fa-facebook-f"
+                   aria-label="Facebook"></a>
+
+                <a href="https://x.com/Abhishek012546"
+                   class="icon fab fa-twitter"
+                   aria-label="X"></a>
+
+                <a href="https://www.instagram.com/its_abhisheksapkale"
+                   class="icon fab fa-instagram"
+                   aria-label="Instagram"></a>
+
+                <a href="https://www.youtube.com/@AbhishekSapkale_06"
+                   class="icon fab fa-youtube"
+                   aria-label="YouTube"></a>
+
             </div>
-            <p>© Abhishek&Co. All Rights Reserved.</p>
+
+            <p>
+                © Abhishek&amp;Co. All Rights Reserved.
+            </p>
+
         </div>
+
     </div>
+
 </footer>
+
+
+<script src="try.js"></script>
 
 </body>
 </html>

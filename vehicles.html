@@ -1,280 +1,778 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Mercedes-Benz – IgnitionX</title>
+    <meta charset="UTF-8">
+
+<!-- Primary SEO -->
+<title>Vehicles | Explore Cars by Type | IgnitionX</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="description" content="Explore vehicles by category at IgnitionX. Browse sedans, SUVs, track cars, classics, coupes, convertibles, wagons, hatchbacks, pickups, electric vehicles, and sports cars.">
+
+<meta name="keywords" content="vehicles, cars, performance cars, sedans, SUVs, track cars, classic cars, coupes, convertibles, wagons, hatchbacks, pickup trucks, electric vehicles, sports cars, automotive performance, IgnitionX">
+
+<meta name="author" content="IgnitionX">
+
+<meta name="robots" content="index, follow">
+
+<meta name="theme-color" content="#132f4b">
+
+<!-- Canonical URL
+     Replace the URL below with your actual GitHub Pages URL before publishing. -->
+<link rel="canonical" href="https://abhigradient.github.io/Random-website/vehicles.html">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vehicles | Explore Cars by Type | IgnitionX">
+<meta property="og:description" content="Discover vehicle categories at IgnitionX, from luxury sedans and SUVs to track cars, classics, electric vehicles, and high-performance sports cars.">
+<meta property="og:url" content="https://abhigradient.github.io/Random-website/vehicles.html">
+<meta property="og:site_name" content="IgnitionX">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vehicles | Explore Cars by Type | IgnitionX">
+<meta name="twitter:description" content="Explore vehicle categories and find performance-focused automotive solutions with IgnitionX.">
+
+<!-- Stylesheets -->
 <link rel="stylesheet" href="try1.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+>
+
+<!-- Structured Data: Vehicle Category List -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Vehicle Categories",
+    "description": "Vehicle categories available through IgnitionX.",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Sedans",
+            "url": "sedans.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SUVs",
+            "url": "suv.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Track Cars",
+            "url": "track.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Classic Cars",
+            "url": "classic.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Coupes",
+            "url": "coupe.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Convertibles",
+            "url": "convertible.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Wagons",
+            "url": "wagon.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Hatchbacks",
+            "url": "hatchback.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Pickup Trucks",
+            "url": "pickup.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Electric Vehicles",
+            "url": "electric.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "Sports Cars",
+            "url": "sports.html"
+        }
+    ]
+}
+</script>
 
 <style>
-/* Hero specific override */
-.hero {
-    background: linear-gradient(135deg, #000000, #2a2a2a);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    position: relative;
-}
+    /* Hero specific override */
+    .hero {
+        background: linear-gradient(135deg, #000000, #2a2a2a);
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+        position: relative;
+    }
 
-.hero h1 {
-    font-size: 46px;
-    margin-bottom: 10px;
-}
+    .hero h1 {
+        font-size: 46px;
+        margin-bottom: 10px;
+    }
 
-.hero .tagline {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.9;
-}
+    .hero .tagline {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.9;
+    }
 
-.hero .subtitle {
-    margin-top: 15px;
-    font-style: italic;
-    opacity: 0.85;
-}
+    .hero .subtitle {
+        margin-top: 15px;
+        font-style: italic;
+        opacity: 0.85;
+    }
 
-.hero-btn {
-    margin-top: 20px;
-    padding: 14px 28px;
-    background: #132f4b;
-    color: #fff;
-    border: none;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
+    .hero-btn {
+        margin-top: 20px;
+        padding: 14px 28px;
+        background: #132f4b;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
 
-.hero-btn:hover {
-    background: #0f2540;
-}
+    .hero-btn:hover {
+        background: #0f2540;
+    }
 
-/* Cars Grid */
-.cars {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-    gap: 30px;
-    padding: 40px 0;
-}
+    /* Cars Grid */
+    .cars {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+        padding: 40px 0;
+    }
 
-.car-card {
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+    .car-card {
+        background-color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: block;
+    }
 
-.car-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-}
+    .car-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    }
 
-.car-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
+    .car-card:focus-visible {
+        outline: 3px solid #132f4b;
+        outline-offset: 4px;
+    }
 
-.car-info {
-    padding: 15px;
-}
+    .car-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+    }
 
-.car-info h3 {
-    margin: 0;
-    font-size: 20px;
-}
+    .car-info {
+        padding: 15px;
+    }
 
-.car-info p {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #555;
-}
+    .car-info h2,
+    .car-info h3 {
+        margin: 0;
+        font-size: 20px;
+    }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .hero h1 { font-size: 36px; }
-}
+    .car-info p {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+    }
 
-@media (max-width: 600px) {
-    .hero { padding: 50px 15px; }
-    .hero h1 { font-size: 28px; }
-    .cars { gap: 20px; }
-}
+    /* Responsive */
+    @media (max-width: 992px) {
+        .hero h1 {
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .hero {
+            padding: 50px 15px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+        }
+
+        .cars {
+            gap: 20px;
+        }
+    }
 </style>
+
 </head>
+
 <body>
 
-<div style="background:wheat;color:#524214;padding:10px 20px;display:flex;align-items:center;justify-content:center;position:relative;font-size:14px;font-weight:600;">
-    <div style="position:absolute; left:20px; display:flex; gap:12px;">
-        <a href="https://www.facebook.com/share/1D6xXfp61p/" style="color:#524214;font-size:20px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/Abhishek012546" style="color:#524214;font-size:20px;"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/its_abhisheksapkale" style="color:#524214;font-size:20px;"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@AbhishekSapkale_06" style="color:#524214;font-size:20px;"><i class="fab fa-youtube"></i></a>
+<!-- Top Contact Bar -->
+<div
+    style="
+        background:wheat;
+        color:#524214;
+        padding:10px 20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        font-size:14px;
+        font-weight:600;
+    "
+    role="banner"
+>
+
+    <div
+        style="
+            position:absolute;
+            left:20px;
+            display:flex;
+            gap:12px;
+        "
+        aria-label="Social media links"
+    >
+        <a
+            href="https://www.facebook.com/share/1D6xXfp61p/"
+            style="color:#524214;font-size:20px;"
+            aria-label="IgnitionX on Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+
+        <a
+            href="https://x.com/Abhishek012546"
+            style="color:#524214;font-size:20px;"
+            aria-label="IgnitionX on X"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+
+        <a
+            href="https://www.instagram.com/its_abhisheksapkale"
+            style="color:#524214;font-size:20px;"
+            aria-label="IgnitionX on Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a
+            href="https://www.youtube.com/@AbhishekSapkale_06"
+            style="color:#524214;font-size:20px;"
+            aria-label="IgnitionX on YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+        </a>
     </div>
-    <div style="text-align:center;"> Speak with our build experts – Call us at +(91)-7558666663</div>
+
+    <div style="text-align:center;">
+        Speak with our build experts – Call us at +(91)-7558666663
+    </div>
 </div>
 
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo"><a href="index.html">IgnitionX</a></div>
 
-        <div class="nav-search">
-            <input type="text" placeholder="Search performance parts, cars, brands...">
-            <button>Search</button>
+<!-- Main Navigation -->
+<header>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+
+            <div class="nav-logo">
+                <a href="index.html" aria-label="IgnitionX Home">
+                    IgnitionX
+                </a>
+            </div>
+
+            <form
+                class="nav-search"
+                action="#"
+                method="get"
+                role="search"
+            >
+                <label for="site-search" class="sr-only">
+                    Search IgnitionX
+                </label>
+
+                <input
+                    id="site-search"
+                    type="search"
+                    name="q"
+                    placeholder="Search performance parts, cars, brands..."
+                    aria-label="Search performance parts, cars, and brands"
+                >
+
+                <button type="submit">
+                    Search
+                </button>
+            </form>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+
+                <li>
+                    <a href="brands.html">Brands</a>
+                </li>
+
+                <li>
+                    <a href="vehicles.html" aria-current="page">
+                        Vehicles
+                    </a>
+                </li>
+
+                <li>
+                    <a href="deals.html">Deals</a>
+                </li>
+
+                <li>
+                    <a href="support.html">Support</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="login.html" class="nav-btn">
+                    Login
+                </a>
+
+                <a href="#" class="nav-btn">
+                    Wishlist
+                </a>
+
+                <a href="cart.html" class="nav-btn cart">
+                    Cart
+                </a>
+            </div>
+
         </div>
+    </nav>
+</header>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="deals.html">Deals</a></li>
-            <li><a href="support.html">Support</a></li>
-        </ul>
 
-        <div class="nav-actions">
-            <a href="login.html" class="nav-btn">Login</a>
-            <a href="#" class="nav-btn">Wishlist</a>
-            <a href="cart.html" class="nav-btn cart">Cart</a>
+<!-- Main Content -->
+<main>
+
+    <!-- Vehicle Categories -->
+    <section class="container section" aria-labelledby="vehicle-heading">
+
+        <h1 id="vehicle-heading">
+            Explore Vehicles by Type
+        </h1>
+
+        <p>
+            Discover performance-focused vehicle categories at IgnitionX,
+            including luxury sedans, SUVs, track cars, classics, coupes,
+            convertibles, wagons, hatchbacks, pickups, electric vehicles,
+            and sports cars.
+        </p>
+
+        <div class="cars">
+
+            <!-- Sedan -->
+            <a href="sedans.html" class="car-card featured">
+                <img
+                    src="https://www.topgear.com/sites/default/files/2022/03/1-Mercedes-S-Class-plug-in.jpg"
+                    alt="Luxury Mercedes-Benz S-Class sedan"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Sedans</h2>
+
+                    <p>
+                        Explore performance and luxury sedans designed
+                        for comfort, technology, and executive driving.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- SUV -->
+            <a href="suv.html" class="car-card">
+                <img
+                    src="https://cdn.motor1.com/images/mgl/1ALLW/s1/2019-mercedes-amg-g63-edition-1.webp"
+                    alt="Mercedes-AMG G 63 luxury SUV"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>SUVs</h2>
+
+                    <p>
+                        Discover powerful SUVs combining luxury,
+                        performance, capability, and all-terrain
+                        versatility.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Track -->
+            <a href="track.html" class="car-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0r4hFX43YiNU3-NCWwU94LYQTAdq4IRTHtg&s"
+                    alt="Mercedes-AMG GT track performance car"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Track Cars</h2>
+
+                    <p>
+                        Explore precision-focused performance cars
+                        engineered for speed, handling, and track driving.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Classic -->
+            <a href="classic.html" class="car-card">
+                <img
+                    src="https://i.redd.it/vf1i0ubfots71.jpg"
+                    alt="Classic Mercedes-Benz W140 sedan"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Classic Cars</h2>
+
+                    <p>
+                        Discover iconic classic vehicles with timeless
+                        styling, heritage, and distinctive automotive
+                        character.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Coupe -->
+            <a href="coupe.html" class="car-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_motxs_MvS8J4crl78efpOKh_GTaf-FXerw&s"
+                    alt="Performance coupe"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Coupes</h2>
+
+                    <p>
+                        Discover sporty two-door cars combining
+                        performance, style, and engaging driving dynamics.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Convertible -->
+            <a href="convertible.html" class="car-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbsadgbyPJi14ThqQ1slTh8TwO3e5ViXChQ&s"
+                    alt="Luxury performance convertible"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Convertibles</h2>
+
+                    <p>
+                        Experience open-top driving with a combination
+                        of performance, luxury, and style.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Wagon -->
+            <a href="wagon.html" class="car-card">
+                <img
+                    src="https://imgd.aeplcdn.com/1280x720/cw/ec/22190/Volvo-V90-67504.jpg?wm=0&t=154557280&t=154557280"
+                    alt="Volvo V90 performance wagon"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Wagons</h2>
+
+                    <p>
+                        Combine performance and practicality with
+                        versatile wagons offering increased cargo space.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Hatchback -->
+            <a href="hatchback.html" class="car-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfoUhyaQJ9LML2NhT5D4X-sOclD-Xjs5meKg&s"
+                    alt="Compact performance hatchback"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Hatchbacks</h2>
+
+                    <p>
+                        Explore compact and versatile hatchbacks designed
+                        for efficient and enjoyable everyday driving.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Pickup -->
+            <a href="pickup.html" class="car-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFx-S0SFYezx5paIZIvhZppy4UujnEBUA8kA&s"
+                    alt="High-performance pickup truck"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Pickup Trucks</h2>
+
+                    <p>
+                        Discover capable pickup trucks built for work,
+                        towing, performance, and off-road adventures.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Electric -->
+            <a href="electric.html" class="car-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnP2bhhCIpB22Z8r98toiMoGZcnflALzxAAA&s"
+                    alt="Modern electric performance vehicle"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Electric Vehicles</h2>
+
+                    <p>
+                        Explore electric vehicles offering instant
+                        torque, modern technology, and zero tailpipe
+                        emissions.
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- Sports -->
+            <a href="sports.html" class="car-card">
+                <img
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                    alt="High-performance sports car"
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="car-info">
+                    <h2>Sports Cars</h2>
+
+                    <p>
+                        Explore high-performance sports cars engineered
+                        for speed, handling, acceleration, and driving
+                        excitement.
+                    </p>
+                </div>
+            </a>
+
         </div>
-    </div>
-</nav>
+    </section>
+
+</main>
 
 
-
-<section class="container section">
-    <h2>Select a Vehicle:</h2>
-    <div class="cars">
-        <a href="sedans.html" class="car-card featured">
-            <img src="https://www.topgear.com/sites/default/files/2022/03/1-Mercedes-S-Class-plug-in.jpg" alt="Mercedes S-Class">
-            <div class="car-info">
-                <h3>Sedan </h3>
-                <p>The ultimate expression of comfort, innovation, and executive luxury.</p>
-            </div>
-        </a>
-
-        <a href="suv.html" class="car-card">
-            <img src="https://cdn.motor1.com/images/mgl/1ALLW/s1/2019-mercedes-amg-g63-edition-1.webp" alt="Mercedes G-Class">
-            <div class="car-info">
-                <h3>S.U.V.</h3>
-                <p>An icon of power and luxury, engineered for every terrain.</p>
-            </div>
-        </a>
-
-        <a href="track.html" class="car-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0r4hFX43YiNU3-NCWwU94LYQTAdq4IRTHtg&s" alt="Mercedes AMG GT">
-            <div class="car-info">
-                <h3>Track </h3>
-                <p>Precision performance with breathtaking sports car design.</p>
-            </div>
-        </a>
-
-        <a href="classic.html" class="car-card">
-            <img src="https://i.redd.it/vf1i0ubfots71.jpg" alt="Mercedes W140">
-            <div class="car-info">
-                <h3>Classic </h3>
-                <p>The legendary S-Class of the 90s — timeless design, unmatched presence, and true mafia-era luxury.</p>
-            </div>
-        </a>
-        <a href="coupe.html" class="car-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_motxs_MvS8J4crl78efpOKh_GTaf-FXerw&s" alt="Coupe">
-    <div class="car-info">
-        <h3>Coupe</h3>
-        <p>Sporty two-door design built for performance and style.</p>
-    </div>
-</a>
-
-<a href="convertible.html" class="car-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbsadgbyPJi14ThqQ1slTh8TwO3e5ViXChQ&s" alt="Convertible">
-    <div class="car-info">
-        <h3>Convertible</h3>
-        <p>Open-top driving experience with luxury and excitement.</p>
-    </div>
-</a>
-
-<a href="wagon.html" class="car-card">
-    <img src="https://imgd.aeplcdn.com/1280x720/cw/ec/22190/Volvo-V90-67504.jpg?wm=0&t=154557280&t=154557280" alt="Wagon">
-    <div class="car-info">
-        <h3>Wagon</h3>
-        <p>Performance meets practicality with extended cargo space.</p>
-    </div>
-</a>
-
-<a href="hatchback.html" class="car-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfoUhyaQJ9LML2NhT5D4X-sOclD-Xjs5meKg&s" alt="Hatchback">
-    <div class="car-info">
-        <h3>Hatchback</h3>
-        <p>Compact, efficient, and perfect for city-focused driving.</p>
-    </div>
-</a>
-
-<a href="pickup.html" class="car-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFx-S0SFYezx5paIZIvhZppy4UujnEBUA8kA&s" alt="Pickup Truck">
-    <div class="car-info">
-        <h3>Pickup</h3>
-        <p>Heavy-duty strength built for work, towing, and off-road use.</p>
-    </div>
-</a>
-
-<a href="electric.html" class="car-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnP2bhhCIpB22Z8r98toiMoGZcnflALzxAAA&s" alt="Electric Vehicle">
-    <div class="car-info">
-        <h3>Electric</h3>
-        <p>Zero-emission vehicles delivering instant torque and innovation.</p>
-    </div>
-</a>
-
-<a href="sports.html" class="car-card">
-    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Sports Car">
-    <div class="car-info">
-        <h3>Sports</h3>
-        <p>High-performance machines engineered for speed and handling.</p>
-    </div>
-</a>
-    </div>
-</section>
-
+<!-- Footer -->
 <footer class="dinan-footer">
+
     <div class="footer-container">
+
         <div class="footer-col about">
             <h3>About IgnitionX</h3>
-            <p>IgnitionX is a leader in aftermarket performance parts, tuning solutions, and expert support for car enthusiasts.</p>
+
+            <p>
+                IgnitionX is a performance automotive platform featuring
+                aftermarket performance parts, tuning solutions, vehicle
+                categories, and expert support for car enthusiasts.
+            </p>
         </div>
+
 
         <div class="footer-col links">
+
             <div>
                 <h3>Shop</h3>
+
                 <ul>
-                    <li><a href="brands.html">Brands</a></li>
-                    <li><a href="vehicles.html">Vehicles</a></li>
-                    <li><a href="deals.html">Deals</a></li>
+                    <li>
+                        <a href="brands.html">Brands</a>
+                    </li>
+
+                    <li>
+                        <a href="vehicles.html" aria-current="page">
+                            Vehicles
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="deals.html">Deals</a>
+                    </li>
                 </ul>
             </div>
+
+
             <div>
                 <h3>Support</h3>
+
                 <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
                 </ul>
             </div>
+
         </div>
 
+
         <div class="footer-col newsletter-social">
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1D6xXfp61p/" class="icon fab fa-facebook-f"></a>
-                <a href="https://x.com/Abhishek012546" class="icon fab fa-twitter"></a>
-                <a href="https://www.instagram.com/its_abhisheksapkale" class="icon fab fa-instagram"></a>
-                <a href="https://www.youtube.com/@AbhishekSapkale_06" class="icon fab fa-youtube"></a>
+
+            <div
+                class="social-icons"
+                aria-label="Social media links"
+            >
+
+                <a
+                    href="https://www.facebook.com/share/1D6xXfp61p/"
+                    class="icon fab fa-facebook-f"
+                    aria-label="IgnitionX on Facebook"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a>
+
+                <a
+                    href="https://x.com/Abhishek012546"
+                    class="icon fab fa-twitter"
+                    aria-label="IgnitionX on X"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a>
+
+                <a
+                    href="https://www.instagram.com/its_abhisheksapkale"
+                    class="icon fab fa-instagram"
+                    aria-label="IgnitionX on Instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a>
+
+                <a
+                    href="https://www.youtube.com/@AbhishekSapkale_06"
+                    class="icon fab fa-youtube"
+                    aria-label="IgnitionX on YouTube"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a>
+
             </div>
-            <p class="copyright">© Abhishek&Co.. All Rights Reserved.</p>
+
+            <p class="copyright">
+                © Abhishek&Co.. All Rights Reserved.
+            </p>
+
         </div>
+
     </div>
+
 </footer>
 
 </body>
